@@ -14,14 +14,31 @@ jenkins:
                 optOut: true
             - mailer:
                 emailAddress: "rcarrigan@cloudbees.com"
+        - id: "orange"
+          name: "Orange Demo"
+          password: ${decodeBase64:${demoPassword}}
+          properties:
+            - blueSteelRedirectOptOutProperty:
+                optOut: true
+            - mailer:
+                emailAddress: "rcarrigan+orange@cloudbees.com"
+        - id: "purple"
+          name: "Purple Demo"
+          password: ${decodeBase64:${demoPassword}}
+          properties:
+            - blueSteelRedirectOptOutProperty:
+                optOut: true
+            - mailer:
+                emailAddress: "rcarrigan+purple@cloudbees.com"
+  primaryView:
+    masters:
+      jobFilters:
+        - "connectedMasterViewFilter"
+      name: "Controllers"
+      recurse: true
   views:
     - all:
         name: "all"
-    - masters:
-        jobFilters:
-          - "connectedMasterViewFilter"
-        name: "Controllers"
-        recurse: true
 beekeeper:
   enabled: true
   securityWarnings:
@@ -75,9 +92,9 @@ masterProvisioning:
     - imageTag: "cloudbees/cloudbees-core-mm:2.235.1.2"
       name: "CloudBees CI - Managed Master - 2.235.1.2"
   kubernetes:
-    cpus: 1.0
+    cpus: 2.0
     disk: 20
-    memory: 2048
+    memory: 3G
 security:
   anonymizeSupportBundle:
     enabled: false

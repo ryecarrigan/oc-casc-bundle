@@ -14,10 +14,12 @@ items:
       userRemoteConfigs:
       - userRemoteConfig:
           credentialsId: github-key
-          url: git@github.com:ryecarrigan/cbci-casc-bundles.git
+          url: "git@github.com:ryecarrigan/cbci-casc-bundles.git"
       branches:
       - branchSpec:
           name: '**/main'
+  triggers:
+    - githubPush: {}
 
 - kind: folder
   displayName: Releases
@@ -33,7 +35,7 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.2.6"
       properties:
         - configurationAsCode:
-            bundle: controller-default
+            bundle: items-example
     - kind: managedController
       displayName: "CloudBees CI - 2.303.1.6"
       description: 'Controller running the August 2021 release from CloudBees'
@@ -43,7 +45,7 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.1.6"
       properties:
         - configurationAsCode:
-            bundle: controller-default
+            bundle: items-example
     - kind: managedController
       displayName: "CloudBees CI - 2.289.3.2"
       description: 'Controller running the July 2021 release from CloudBees'
@@ -53,11 +55,22 @@ items:
           image: "CloudBees CI - Managed Master - 2.289.3.2"
       properties:
         - configurationAsCode:
-            bundle: controller-default
+            bundle: items-example
 - kind: folder
   displayName: team-purple
   name: team-purple
   description: "Controllers for Team Purple's projects"
+  groups:
+    - name: 'team-purple-int'
+      members:
+        external_groups:
+          - 'team-purple-ext'
+        users:
+          - 'purple'
+      roles:
+        - name: 'developer-role'
+          grantedAt: 'current'
+          propagates: 'true'
   items:
     - kind: managedController
       displayName: "Team Purple's Controller 1"
@@ -67,7 +80,7 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.2.6"
       properties:
         - configurationAsCode:
-            bundle: controller-default
+            bundle: items-example
     - kind: managedController
       displayName: "Team Purple's Controller 2"
       name: team-purple-2
@@ -76,12 +89,23 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.2.6"
       properties:
         - configurationAsCode:
-            bundle: controller-default
+            bundle: items-example
 
 - kind: folder
   displayName: team-orange
   name: team-orange
   description: "Controllers for Team Orange's projects"
+  groups:
+    - name: 'team-orange-int'
+      members:
+        external_groups:
+          - 'team-orange-ext'
+        users:
+          - 'orange'
+      roles:
+        - name: 'developer-role'
+          grantedAt: 'current'
+          propagates: 'true'
   items:
     - kind: managedController
       displayName: "Team Orange's Controller 1"
@@ -91,7 +115,7 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.2.6"
       properties:
         - configurationAsCode:
-            bundle: controller-default
+            bundle: items-example
     - kind: managedController
       displayName: "Team Orange's Controller 2"
       name: team-orange-2
@@ -100,4 +124,4 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.2.6"
       properties:
         - configurationAsCode:
-            bundle: controller-default
+            bundle: items-example
