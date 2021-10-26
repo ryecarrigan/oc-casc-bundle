@@ -39,6 +39,11 @@ jenkins:
   views:
     - all:
         name: "all"
+    - masters:
+        jobFilters:
+          - "connectedMasterViewFilter"
+        name: "Controllers"
+        recurse: true
 beekeeper:
   enabled: true
   securityWarnings:
