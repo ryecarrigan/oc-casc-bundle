@@ -3,7 +3,7 @@ id: "cjoc"
 version: "1"
 
 jcasc:
-- "jenkins.yaml"
+- "jenkins/"
 plugins:
 - "plugins.yaml"
 items:

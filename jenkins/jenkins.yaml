@@ -1,0 +1,74 @@
+jenkins:
+  authorizationStrategy: "cloudBeesRoleBasedAccessControl"
+  numExecutors: 1
+  remotingSecurity:
+    enabled: true
+  securityRealm:
+    local:
+      users:
+        - id: "rye"
+          name: "Rye Carrigan"
+          password: ${decodeBase64:${adminPassword}}
+          properties:
+            - blueSteelRedirectOptOutProperty:
+                optOut: true
+            - mailer:
+                emailAddress: "rcarrigan@cloudbees.com"
+        - id: "orange"
+          name: "Orange Demo"
+          password: ${decodeBase64:${demoPassword}}
+          properties:
+            - blueSteelRedirectOptOutProperty:
+                optOut: true
+            - mailer:
+                emailAddress: "rcarrigan+orange@cloudbees.com"
+        - id: "purple"
+          name: "Purple Demo"
+          password: ${decodeBase64:${demoPassword}}
+          properties:
+            - blueSteelRedirectOptOutProperty:
+                optOut: true
+            - mailer:
+                emailAddress: "rcarrigan+purple@cloudbees.com"
+  primaryView:
+    masters:
+      jobFilters:
+        - "connectedMasterViewFilter"
+      name: "Controllers"
+      recurse: true
+  views:
+    - all:
+        name: "all"
+    - masters:
+        jobFilters:
+          - "connectedMasterViewFilter"
+        name: "Controllers"
+        recurse: true
+beekeeper:
+  enabled: true
+  securityWarnings:
+    enabledForCore: true
+    enabledForPlugins: true
+  upgrades:
+    autoDowngradePlugins: false
+    autoUpgradePlugins: false
+cloudBeesCasCServer:
+  defaultBundle: controller-default
+  visibility: true
+security:
+  anonymizeSupportBundle:
+    enabled: false
+tool:
+  cloudbeesPluginUsageAnalyzer:
+    enabled: true
+license:
+  certificate: ${licenseCert}
+  key: ${licenseKey}
+unclassified:
+  gitHubPluginConfig:
+    configs:
+      - credentialsId: "github-token"
+        name: "GitHub"
+    hookUrl: "$JENKINS_BASE_URL/github-webhook/"
+  usageStatisticsCloudBees:
+    usageStatisticsCollected: false
