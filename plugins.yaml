@@ -5,7 +5,9 @@ plugins:
 - id: async-http-client
 - id: authentication-tokens
 - id: aws-credentials
-- id: aws-java-sdk
+- id: aws-java-sdk-ec2
+- id: aws-java-sdk-elasticbeanstalk
+- id: aws-java-sdk-minimal
 - id: blueocean-commons
 - id: blueocean-rest
 - id: bluesteel-cjoc
@@ -97,6 +99,7 @@ plugins:
 - id: token-macro
 - id: trilead-api
 - id: unique-id
+- id: user-activity-monitoring
 - id: variant
 - id: workflow-api
 - id: workflow-scm-step

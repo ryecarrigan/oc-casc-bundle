@@ -3,60 +3,6 @@ removeStrategy:
   items: NONE
 
 items:
-- kind: freeStyleJob
-  name: casc-bundles-update
-  displayName: Update CasC Bundles
-  builders:
-    - casCBundlesSyncBuildStep:
-        purgeDeleted: true
-  scm:
-    gitSCM:
-      userRemoteConfigs:
-      - userRemoteConfig:
-          credentialsId: github-key
-          url: "git@github.com:ryecarrigan/cbci-casc-bundles.git"
-      branches:
-      - branchSpec:
-          name: '**/main'
-  triggers:
-    - githubPush: {}
-
-- kind: folder
-  displayName: Releases
-  name: releases
-  description: 'Monthly releases from CloudBees'
-  items:
-    - kind: managedController
-      displayName: "CloudBees CI - 2.303.2.6"
-      description: 'Controller running the September 2021 release from CloudBees'
-      name: r23032
-      configuration:
-        kubernetes:
-          image: "CloudBees CI - Managed Master - 2.303.2.6"
-      properties:
-        - configurationAsCode:
-            bundle: items-example
-    - kind: managedController
-      displayName: "CloudBees CI - 2.303.1.6"
-      description: 'Controller running the August 2021 release from CloudBees'
-      name: r23031
-      configuration:
-        kubernetes:
-          image: "CloudBees CI - Managed Master - 2.303.1.6"
-      properties:
-        - configurationAsCode:
-            bundle: items-example
-    - kind: managedController
-      displayName: "CloudBees CI - 2.289.3.2"
-      description: 'Controller running the July 2021 release from CloudBees'
-      name: r22893
-      configuration:
-        kubernetes:
-          image: "CloudBees CI - Managed Master - 2.289.3.2"
-      properties:
-        - configurationAsCode:
-            bundle: items-example
-
 - kind: folder
   displayName: team-purple
   name: team-purple
@@ -81,7 +27,7 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.2.6"
       properties:
         - configurationAsCode:
-            bundle: items-example
+            bundle: default-2.303.2
     - kind: managedController
       displayName: "Team Purple's Controller 2"
       name: team-purple-2
@@ -90,7 +36,7 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.2.6"
       properties:
         - configurationAsCode:
-            bundle: items-example
+            bundle: default-2.303.2
 
 - kind: folder
   displayName: team-orange
@@ -116,7 +62,7 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.2.6"
       properties:
         - configurationAsCode:
-            bundle: items-example
+            bundle: default-2.303.2
     - kind: managedController
       displayName: "Team Orange's Controller 2"
       name: team-orange-2
@@ -125,4 +71,4 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.2.6"
       properties:
         - configurationAsCode:
-            bundle: items-example
+            bundle: default-2.303.2

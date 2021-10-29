@@ -1,12 +1,15 @@
 apiVersion: "1"
 id: "cjoc"
-version: "1"
+version: "4"
 
 jcasc:
-- "jenkins.yaml"
+- "jcasc.jenkins.yaml"
+- "jcasc.masterProvisioning.yaml"
 plugins:
 - "plugins.yaml"
 items:
-- "items.yaml"
+- "items.root.yaml"
+- "items.releases.yaml"
+- "items.teams.yaml"
 rbac:
 - "rbac.yaml"
