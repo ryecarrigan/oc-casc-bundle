@@ -27,7 +27,7 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.2.6"
       properties:
         - configurationAsCode:
-            bundle: default-2.303.2
+            bundle: items-example
     - kind: managedController
       displayName: "Team Purple's Controller 2"
       name: team-purple-2
@@ -36,7 +36,7 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.2.6"
       properties:
         - configurationAsCode:
-            bundle: default-2.303.2
+            bundle: items-example
 
 - kind: folder
   displayName: team-orange
@@ -62,7 +62,7 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.2.6"
       properties:
         - configurationAsCode:
-            bundle: default-2.303.2
+            bundle: items-example
     - kind: managedController
       displayName: "Team Orange's Controller 2"
       name: team-orange-2
@@ -71,4 +71,4 @@ items:
           image: "CloudBees CI - Managed Master - 2.303.2.6"
       properties:
         - configurationAsCode:
-            bundle: default-2.303.2
+            bundle: items-example

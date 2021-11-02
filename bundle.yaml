@@ -1,6 +1,6 @@
 apiVersion: "1"
 id: "cjoc"
-version: "4"
+version: "1"
 
 jcasc:
 - "jcasc.jenkins.yaml"
@@ -10,6 +10,7 @@ plugins:
 items:
 - "items.root.yaml"
 - "items.releases.yaml"
-- "items.teams.yaml"
+# Teams folders for RBAC demo. Uncomment as desired.
+#- "items.teams.yaml"
 rbac:
 - "rbac.yaml"
