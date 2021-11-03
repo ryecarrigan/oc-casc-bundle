@@ -14,7 +14,7 @@ items:
       name: r23033
       configuration:
         kubernetes:
-          image: "CloudBees CI - Managed Master - 2.303.3.2"
+          image: "CloudBees CI - Managed Master - 2.303.3.3"
       properties:
         - configurationAsCode:
             bundle: default-2.303.3

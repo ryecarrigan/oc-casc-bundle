@@ -69,6 +69,7 @@ plugins:
 - id: nectar-license
 - id: nectar-rbac
 - id: node-iterator-api
+- id: notification-api
 - id: oauth-credentials
 - id: okhttp-api
 - id: operations-center-agent
@@ -79,6 +80,7 @@ plugins:
 - id: operations-center-kubernetes-cloud
 - id: operations-center-license
 - id: operations-center-monitoring
+- id: operations-center-notification
 - id: operations-center-rbac
 - id: operations-center-server
 - id: operations-center-sso

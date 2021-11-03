@@ -52,6 +52,9 @@ beekeeper:
   upgrades:
     autoDowngradePlugins: false
     autoUpgradePlugins: false
+notificationConfiguration:
+  enabled: true
+  router: operationsCenter
 cloudBeesCasCServer:
   visibility: true
 security:
