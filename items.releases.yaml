@@ -9,6 +9,46 @@ items:
   description: 'Monthly releases from CloudBees'
   items:
     - kind: managedController
+      displayName: "CloudBees CI - 2.332.1"
+      description: 'Controller running the March 2022 release from CloudBees'
+      name: r23321
+      configuration:
+        kubernetes:
+          image: "CloudBees CI - Managed Master - 2.332.1.5"
+      properties:
+        - configurationAsCode:
+            bundle: default-2.332.1
+    - kind: managedController
+      displayName: "CloudBees CI - 2.319.3"
+      description: 'Controller running the February 2022 release from CloudBees'
+      name: r23193
+      configuration:
+        kubernetes:
+          image: "CloudBees CI - Managed Master - 2.319.3.3"
+      properties:
+        - configurationAsCode:
+            bundle: default-2.319.2
+    - kind: managedController
+      displayName: "CloudBees CI - 2.319.2"
+      description: 'Controller running the January 2022 release from CloudBees'
+      name: r23192
+      configuration:
+        kubernetes:
+          image: "CloudBees CI - Managed Master - 2.319.2.9"
+      properties:
+        - configurationAsCode:
+            bundle: default-2.319.2
+    - kind: managedController
+      displayName: "CloudBees CI - 2.319.1"
+      description: 'Controller running the December 2021 release from CloudBees'
+      name: r23191
+      configuration:
+        kubernetes:
+          image: "CloudBees CI - Managed Master - 2.319.1.5"
+      properties:
+        - configurationAsCode:
+            bundle: default-2.319.2
+    - kind: managedController
       displayName: "CloudBees CI - 2.303.3"
       description: 'Controller running the November 2021 release from CloudBees'
       name: r23033

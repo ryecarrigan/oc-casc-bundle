@@ -5,6 +5,7 @@ groups:
   - name: Administrators
     members:
       users:
+        - admin
         - rye
     roles:
       - name: administer-role

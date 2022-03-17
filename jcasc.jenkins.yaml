@@ -1,8 +1,6 @@
 jenkins:
   authorizationStrategy: "cloudBeesRoleBasedAccessControl"
   numExecutors: 1
-  remotingSecurity:
-    enabled: true
   securityRealm:
     local:
       users:
@@ -67,6 +65,12 @@ license:
   certificate: ${licenseCert}
   key: ${licenseKey}
 unclassified:
+  bundleStorageService:
+    purgeOnDeactivation: true
+  cloudbeesPlatform:
+    url: "https://cd.rye.ps.beescloud.com/"
+  cloudbeesPrometheus:
+    collectingMetricsPeriodInSeconds: 30
   gitHubPluginConfig:
     configs:
       - credentialsId: "github-token"
