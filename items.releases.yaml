@@ -9,6 +9,16 @@ items:
   description: 'Monthly releases from CloudBees'
   items:
     - kind: managedController
+      displayName: "CloudBees CI - 2.332.2"
+      description: 'Controller running the April 2022 release from CloudBees'
+      name: r23322
+      configuration:
+        kubernetes:
+          image: "CloudBees CI - Managed Master - 2.332.2.2"
+      properties:
+        - configurationAsCode:
+            bundle: default-2.332.1
+    - kind: managedController
       displayName: "CloudBees CI - 2.332.1"
       description: 'Controller running the March 2022 release from CloudBees'
       name: r23321
