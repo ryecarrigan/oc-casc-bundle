@@ -67,6 +67,12 @@ license:
 unclassified:
   bundleStorageService:
     purgeOnDeactivation: true
+  cascAutoControllerProvisioning:
+    provisionControllerOnCreation: true
+    fireAndForget: true
+    initialDelay: 15
+    timeout: 600
+    duration: 60
   cloudbeesPlatform:
     url: "https://cd.rye.ps.beescloud.com/"
   cloudbeesPrometheus:
