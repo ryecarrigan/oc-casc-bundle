@@ -14,7 +14,8 @@ items:
       name: r23322
       configuration:
         kubernetes:
-          image: "CloudBees CI - Managed Master - 2.332.2.2"
+          image: "CloudBees CI - Managed Controller - 2.332.2.6"
+          javaOptions: -Xms${controllerHeapSize} -Xmx${controllerHeapSize}
       properties:
         - configurationAsCode:
             bundle: default-2.332.1
@@ -25,6 +26,7 @@ items:
       configuration:
         kubernetes:
           image: "CloudBees CI - Managed Master - 2.332.1.5"
+          javaOptions: -Xms${controllerHeapSize} -Xmx${controllerHeapSize}
       properties:
         - configurationAsCode:
             bundle: default-2.332.1
@@ -35,6 +37,7 @@ items:
       configuration:
         kubernetes:
           image: "CloudBees CI - Managed Master - 2.319.3.3"
+          javaOptions: -Xms${controllerHeapSize} -Xmx${controllerHeapSize}
       properties:
         - configurationAsCode:
             bundle: default-2.319.2
@@ -45,6 +48,7 @@ items:
       configuration:
         kubernetes:
           image: "CloudBees CI - Managed Master - 2.319.2.9"
+          javaOptions: -Xms${controllerHeapSize} -Xmx${controllerHeapSize}
       properties:
         - configurationAsCode:
             bundle: default-2.319.2
@@ -55,26 +59,7 @@ items:
       configuration:
         kubernetes:
           image: "CloudBees CI - Managed Master - 2.319.1.5"
+          javaOptions: -Xms${controllerHeapSize} -Xmx${controllerHeapSize}
       properties:
         - configurationAsCode:
             bundle: default-2.319.2
-    - kind: managedController
-      displayName: "CloudBees CI - 2.303.3"
-      description: 'Controller running the November 2021 release from CloudBees'
-      name: r23033
-      configuration:
-        kubernetes:
-          image: "CloudBees CI - Managed Master - 2.303.3.3"
-      properties:
-        - configurationAsCode:
-            bundle: default-2.303.3
-    - kind: managedController
-      displayName: "CloudBees CI - 2.303.2"
-      description: 'Controller running the September 2021 release from CloudBees'
-      name: r23032
-      configuration:
-        kubernetes:
-          image: "CloudBees CI - Managed Master - 2.303.2.6"
-      properties:
-        - configurationAsCode:
-            bundle: default-2.303.2

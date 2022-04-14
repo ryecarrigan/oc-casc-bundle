@@ -52,4 +52,4 @@ masterProvisioning:
   kubernetes:
     cpus: "2.0"
     disk: "50"
-    memory: "8192"
+    memory: "${controllerMemory}"
