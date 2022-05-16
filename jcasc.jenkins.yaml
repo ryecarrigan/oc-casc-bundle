@@ -66,9 +66,21 @@ license:
   key: ${licenseKey}
 unclassified:
   bundleStorageService:
+    activated: true
+    activeBundle:
+      name: "CBCI CasC Bundles"
+      retriever:
+        SCM:
+          defaultVersion: "main"
+          scmSource:
+            git:
+              remote: "https://github.com/ryecarrigan/cbci-casc-bundles.git"
+              traits:
+                - "gitBranchDiscovery"
+    pollingPeriod: 120
     purgeOnDeactivation: true
   cascAutoControllerProvisioning:
-    provisionControllerOnCreation: true
+    provisionControllerOnCreation: false
     fireAndForget: true
     initialDelay: 15
     timeout: 600
