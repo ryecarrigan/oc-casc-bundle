@@ -7,9 +7,9 @@ jcasc:
   - "jcasc.masterProvisioning.yaml"
 plugins:
   - "plugins.yaml"
+catalog:
+  - 'plugin-catalog.yaml'
 items:
   - "items.yaml"
 rbac:
   - "rbac.yaml"
-variables:
-  - "variables.yaml"

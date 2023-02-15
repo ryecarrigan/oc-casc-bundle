@@ -38,6 +38,8 @@ plugins:
 - id: cloudbees-unified-ui
 - id: cloudbees-update-center-plugin
 - id: command-launcher
+- id: commons-lang3-api
+- id: commons-text-api
 - id: configuration-as-code
 - id: credentials
 - id: credentials-binding
@@ -52,7 +54,11 @@ plugins:
 - id: github-api
 - id: handy-uri-templates-2-api
 - id: infradna-backup
+- id: instance-identity
+- id: ionicons-api
 - id: jackson2-api
+- id: jakarta-activation-api
+- id: jakarta-mail-api
 - id: javax-activation-api
 - id: javax-mail-api
 - id: jaxb
@@ -65,12 +71,17 @@ plugins:
 - id: kubernetes
 - id: kubernetes-client-api
 - id: kubernetes-credentials
+- id: kubernetes-credentials-provider
 - id: ldap
 - id: mailer
 - id: mapdb-api
 - id: master-provisioning-core
 - id: master-provisioning-kubernetes
 - id: metrics
+- id: mina-sshd-api-common
+- id: mina-sshd-api-core
+- id: mina-sshd-api-scp
+- id: mina-sshd-api-sftp
 - id: nectar-license
 - id: nectar-rbac
 - id: node-iterator-api
@@ -109,6 +120,7 @@ plugins:
 - id: user-activity-monitoring
 - id: variant
 - id: workflow-api
+- id: workflow-durable-task-step
 - id: workflow-scm-step
 - id: workflow-step-api
 - id: workflow-support

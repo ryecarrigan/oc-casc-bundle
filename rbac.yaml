@@ -5,26 +5,25 @@ groups:
   - name: Administrators
     members:
       users:
-        - admin
         - rye
     roles:
-      - name: administer-role
+      - name: administrator
         grantedAt: current
         propagates: 'true'
   - name: Developers
     roles:
-      - name: developer-role
+      - name: developer
         grantedAt: child
   - name: Browsers
     roles:
-      - name: browser-role
+      - name: browser
         grantedAt: child
 roles:
-  - name: administer-role
+  - name: administrator
     filterable: 'false'
     permissions:
       - hudson.model.Hudson.Administer
-  - name: developer-role
+  - name: developer
     filterable: 'true'
     permissions:
       - hudson.model.Hudson.Read
@@ -38,13 +37,13 @@ roles:
       - hudson.model.View.Create
       - hudson.model.View.Delete
       - hudson.model.View.Read
-  - name: browser-role
+  - name: browser
     filterable: 'true'
     permissions:
       - hudson.model.Hudson.Read
   - name: authenticated
     filterable: 'false'
-    permissions:
-      - hudson.model.Hudson.Read
+    permissions: []
   - name: anonymous
     filterable: 'false'
+    permissions: []

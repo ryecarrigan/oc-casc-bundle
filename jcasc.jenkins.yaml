@@ -87,8 +87,6 @@ unclassified:
     duration: 60
   cloudbeesPlatform:
     url: "https://cd.rye.ps.beescloud.com/"
-  cloudbeesPrometheus:
-    collectingMetricsPeriodInSeconds: 30
   gitHubPluginConfig:
     configs:
       - credentialsId: "github-token"

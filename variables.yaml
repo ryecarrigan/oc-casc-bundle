@@ -1,3 +1,0 @@
-variables:
-  - controllerHeapSize: "2048m"
-  - controllerMemory: "4096"
