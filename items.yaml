@@ -9,12 +9,22 @@ items:
     description: 'Monthly releases from CloudBees'
     items:
       - kind: managedController
+        displayName: "CloudBees CI - 2.387.1"
+        description: 'Controller running the March 2023 release from CloudBees'
+        name: r23871
+        configuration:
+          kubernetes:
+            image: "CloudBees CI - Managed Controller - 2.387.1.2"
+        properties:
+          - configurationAsCode:
+              bundle: default-2.387.1
+      - kind: managedController
         displayName: "CloudBees CI - 2.375.3"
         description: 'Controller running the February 2023 release from CloudBees'
         name: r23753
         configuration:
           kubernetes:
-            image: "CloudBees CI - Managed Controller - 2.375.3.4"
+            image: "CloudBees CI - Managed Controller - 2.375.3.5"
         properties:
           - configurationAsCode:
               bundle: default-2.375.3

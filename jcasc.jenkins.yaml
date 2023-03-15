@@ -50,20 +50,25 @@ beekeeper:
   upgrades:
     autoDowngradePlugins: false
     autoUpgradePlugins: false
+cloudBeesCasCServer:
+  visibility: true
 notificationConfiguration:
   enabled: true
   router: operationsCenter
-cloudBeesCasCServer:
-  visibility: true
 security:
   anonymizeSupportBundle:
     enabled: false
+  gitHostKeyVerificationConfiguration:
+    sshHostKeyVerificationStrategy: "acceptFirstConnectionStrategy"
 tool:
   cloudbeesPluginUsageAnalyzer:
     enabled: true
 license:
   certificate: ${licenseCert}
   key: ${licenseKey}
+support:
+  automatedBundleConfiguration:
+    enabled: false
 unclassified:
   bundleStorageService:
     activated: true
@@ -93,6 +98,7 @@ unclassified:
         name: "GitHub"
     hookUrl: "$JENKINS_BASE_URL/github-webhook/"
   usageStatisticsCloudBees:
+    disabledJenkinsUsageStatistics: true
     usageStatisticsCollected: false
 credentials:
   system:
