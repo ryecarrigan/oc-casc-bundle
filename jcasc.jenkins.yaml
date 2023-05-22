@@ -72,16 +72,16 @@ support:
 unclassified:
   bundleStorageService:
     activated: true
-    activeBundle:
-      name: "CBCI CasC Bundles"
-      retriever:
-        SCM:
-          defaultVersion: "main"
-          scmSource:
-            git:
-              remote: "https://github.com/ryecarrigan/cbci-casc-bundles.git"
-              traits:
-                - "gitBranchDiscovery"
+    bundles:
+      - name: "CBCI CasC Bundles"
+        retriever:
+          SCM:
+            defaultVersion: "main"
+            scmSource:
+              git:
+                remote: "https://github.com/ryecarrigan/cbci-casc-bundles.git"
+                traits:
+                  - "gitBranchDiscovery"
     pollingPeriod: 120
     purgeOnDeactivation: true
   cascAutoControllerProvisioning:
