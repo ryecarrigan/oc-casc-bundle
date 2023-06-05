@@ -14,7 +14,7 @@ items:
         name: r24011
         configuration:
           kubernetes:
-            image: "CloudBees CI - Managed Controller - 2.401.1.1"
+            image: "CloudBees CI - Managed Controller - 2.401.1.3"
         properties:
           - configurationAsCode:
               bundle: main/default-2.401
