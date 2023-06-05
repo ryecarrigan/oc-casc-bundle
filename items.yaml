@@ -9,6 +9,16 @@ items:
     description: 'Monthly releases from CloudBees'
     items:
       - kind: managedController
+        displayName: "CloudBees CI - 2.401.1"
+        description: 'Controller running the late May 2023 release from CloudBees'
+        name: r24011
+        configuration:
+          kubernetes:
+            image: "CloudBees CI - Managed Controller - 2.401.1.1"
+        properties:
+          - configurationAsCode:
+              bundle: main/default-2.401
+      - kind: managedController
         displayName: "CloudBees CI - 2.387.3"
         description: 'Controller running the early May 2023 release from CloudBees'
         name: r23873
@@ -17,7 +27,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.387.3.3"
         properties:
           - configurationAsCode:
-              bundle: default-2.387.1
+              bundle: main/default-2.387
       - kind: managedController
         displayName: "CloudBees CI - 2.387.2"
         description: 'Controller running the April 2023 release from CloudBees'
@@ -27,7 +37,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.387.2.4"
         properties:
           - configurationAsCode:
-              bundle: default-2.387.1
+              bundle: main/default-2.387
       - kind: managedController
         displayName: "CloudBees CI - 2.387.1"
         description: 'Controller running the March 2023 release from CloudBees'
@@ -37,7 +47,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.387.1.3"
         properties:
           - configurationAsCode:
-              bundle: default-2.387.1
+              bundle: main/default-2.387
       - kind: managedController
         displayName: "CloudBees CI - 2.375.3"
         description: 'Controller running the February 2023 release from CloudBees'
@@ -47,7 +57,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.375.3.5"
         properties:
           - configurationAsCode:
-              bundle: default-2.375.3
+              bundle: main/default-2.375
       - kind: managedController
         displayName: "CloudBees CI - 2.375.2"
         description: 'Controller running the January 2023 release from CloudBees'
@@ -57,7 +67,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.375.2.3"
         properties:
           - configurationAsCode:
-              bundle: default-2.375.2
+              bundle: main/default-2.375
       - kind: managedController
         displayName: "CloudBees CI - 2.375.1"
         description: 'Controller running the late November 2022 release from CloudBees'
@@ -67,7 +77,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.375.1.1"
         properties:
           - configurationAsCode:
-              bundle: default-2.346.4
+              bundle: main/default-2.375
       - kind: managedController
         displayName: "CloudBees CI - 2.361.3"
         description: 'Controller running the early November 2022 release from CloudBees'
@@ -77,7 +87,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.361.3.2"
         properties:
           - configurationAsCode:
-              bundle: default-2.346.4
+              bundle: main/default-2.346
       - kind: managedController
         displayName: "CloudBees CI - 2.361.2"
         description: 'Controller running the October 2022 release from CloudBees'
@@ -87,7 +97,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.361.1.2"
         properties:
           - configurationAsCode:
-              bundle: default-2.346.4
+              bundle: main/default-2.346
       - kind: managedController
         displayName: "CloudBees CI - 2.361.1"
         description: 'Controller running the September 2022 release from CloudBees'
@@ -97,7 +107,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.361.1.2"
         properties:
           - configurationAsCode:
-              bundle: default-2.346.4
+              bundle: main/default-2.346
       - kind: managedController
         displayName: "CloudBees CI - 2.346.4"
         description: 'Controller running the late August 2022 release from CloudBees'
@@ -107,7 +117,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.346.4.1"
         properties:
           - configurationAsCode:
-              bundle: default-2.346.3
+              bundle: main/default-2.346
       - kind: managedController
         displayName: "CloudBees CI - 2.346.3"
         description: 'Controller running the early August 2022 release from CloudBees'
@@ -117,7 +127,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.346.3.4"
         properties:
           - configurationAsCode:
-              bundle: default-2.346.3
+              bundle: main/default-2.346
       - kind: managedController
         displayName: "CloudBees CI - 2.346.2"
         description: 'Controller running the July 2022 release from CloudBees'
@@ -127,7 +137,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.346.2.2"
         properties:
           - configurationAsCode:
-              bundle: default-2.346.2
+              bundle: main/default-2.346
       - kind: managedController
         displayName: "CloudBees CI - 2.346.1"
         description: 'Controller running the June 2022 release from CloudBees'
@@ -137,7 +147,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.346.1.4"
         properties:
           - configurationAsCode:
-              bundle: default-2.332.3
+              bundle: main/default-2.346
       - kind: managedController
         displayName: "CloudBees CI - 2.332.3"
         description: 'Controller running the May 2022 release from CloudBees'
@@ -147,27 +157,7 @@ items:
             image: "CloudBees CI - Managed Controller - 2.332.3.4"
         properties:
           - configurationAsCode:
-              bundle: default-2.332.3
-      - kind: managedController
-        displayName: "CloudBees CI - 2.332.2"
-        description: 'Controller running the April 2022 release from CloudBees'
-        name: r23322
-        configuration:
-          kubernetes:
-            image: "CloudBees CI - Managed Controller - 2.332.2.6"
-        properties:
-          - configurationAsCode:
-              bundle: default-2.332.2
-      - kind: managedController
-        displayName: "CloudBees CI - 2.332.1"
-        description: 'Controller running the March 2022 release from CloudBees'
-        name: r23321
-        configuration:
-          kubernetes:
-            image: "CloudBees CI - Managed Master - 2.332.1.5"
-        properties:
-          - configurationAsCode:
-              bundle: default-2.332.1
+              bundle: main/default-2.332
 
 # Example teams
   - kind: folder
@@ -191,19 +181,19 @@ items:
         name: team-purple-1
         configuration:
           kubernetes:
-            image: "CloudBees CI - Managed Master - 2.303.2.6"
+            image: "CloudBees CI - Managed Controller - 2.346.4.1"
         properties:
           - configurationAsCode:
-              bundle: items-example
+              bundle: main/items-example
       - kind: managedController
         displayName: "Team Purple's Controller 2"
         name: team-purple-2
         configuration:
           kubernetes:
-            image: "CloudBees CI - Managed Master - 2.303.2.6"
+            image: "CloudBees CI - Managed Controller - 2.346.4.1"
         properties:
           - configurationAsCode:
-              bundle: items-example
+              bundle: main/items-example
   - kind: folder
     displayName: team-orange
     name: team-orange
@@ -225,16 +215,16 @@ items:
         name: team-orange-1
         configuration:
           kubernetes:
-            image: "CloudBees CI - Managed Master - 2.303.2.6"
+            image: "CloudBees CI - Managed Controller - 2.346.4.1"
         properties:
           - configurationAsCode:
-              bundle: items-example
+              bundle: main/items-example
       - kind: managedController
         displayName: "Team Orange's Controller 2"
         name: team-orange-2
         configuration:
           kubernetes:
-            image: "CloudBees CI - Managed Master - 2.303.2.6"
+            image: "CloudBees CI - Managed Controller - 2.346.4.1"
         properties:
           - configurationAsCode:
-              bundle: items-example
+              bundle: main/items-example

@@ -42,6 +42,7 @@ jenkins:
           - "connectedMasterViewFilter"
         name: "Controllers"
         recurse: true
+
 beekeeper:
   enabled: true
   securityWarnings:
@@ -50,25 +51,34 @@ beekeeper:
   upgrades:
     autoDowngradePlugins: false
     autoUpgradePlugins: false
+
 cloudBeesCasCServer:
+  defaultBundle: "main/default-global"
+  disableRemoteValidation: false
   visibility: true
+
 notificationConfiguration:
   enabled: true
   router: operationsCenter
+
 security:
   anonymizeSupportBundle:
     enabled: false
   gitHostKeyVerificationConfiguration:
     sshHostKeyVerificationStrategy: "acceptFirstConnectionStrategy"
+
 tool:
   cloudbeesPluginUsageAnalyzer:
     enabled: true
+
 license:
   certificate: ${licenseCert}
   key: ${licenseKey}
+
 support:
   automatedBundleConfiguration:
     enabled: false
+
 unclassified:
   bundleStorageService:
     activated: true
@@ -100,6 +110,7 @@ unclassified:
   usageStatisticsCloudBees:
     disabledJenkinsUsageStatistics: true
     usageStatisticsCollected: false
+
 credentials:
   system:
     domainCredentials:
