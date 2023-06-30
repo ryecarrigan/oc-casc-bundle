@@ -9,6 +9,16 @@ items:
     description: 'Monthly releases from CloudBees'
     items:
       - kind: managedController
+        displayName: "CloudBees CI - 2.401.2"
+        description: 'Controller running the June 2023 release from CloudBees'
+        name: r24011
+        configuration:
+          kubernetes:
+            image: "CloudBees CI - Managed Controller - 2.401.2.3"
+        properties:
+          - configurationAsCode:
+              bundle: main/default-2.401
+      - kind: managedController
         displayName: "CloudBees CI - 2.401.1"
         description: 'Controller running the late May 2023 release from CloudBees'
         name: r24011
@@ -148,16 +158,6 @@ items:
         properties:
           - configurationAsCode:
               bundle: main/default-2.346
-      - kind: managedController
-        displayName: "CloudBees CI - 2.332.3"
-        description: 'Controller running the May 2022 release from CloudBees'
-        name: r23323
-        configuration:
-          kubernetes:
-            image: "CloudBees CI - Managed Controller - 2.332.3.4"
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.332
 
 # Example teams
   - kind: folder
