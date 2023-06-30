@@ -11,7 +11,7 @@ items:
       - kind: managedController
         displayName: "CloudBees CI - 2.401.2"
         description: 'Controller running the June 2023 release from CloudBees'
-        name: r24011
+        name: r24012
         configuration:
           kubernetes:
             image: "CloudBees CI - Managed Controller - 2.401.2.3"
