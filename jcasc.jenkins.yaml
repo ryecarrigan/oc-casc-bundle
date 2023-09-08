@@ -95,11 +95,8 @@ unclassified:
     pollingPeriod: 120
     purgeOnDeactivation: true
   cascAutoControllerProvisioning:
-    provisionControllerOnCreation: false
+    provisionControllerOnCreation: true
     fireAndForget: true
-    initialDelay: 15
-    timeout: 600
-    duration: 60
   cloudbeesPlatform:
     url: "https://cd.rye.ps.beescloud.com/"
   gitHubPluginConfig:
@@ -127,3 +124,5 @@ credentials:
               id: "github-token"
               scope: GLOBAL
               secret: ${githubToken}
+        domain:
+          name: "CasC"

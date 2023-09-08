@@ -6,4 +6,4 @@ configurations:
   - description: Catalog plugins
     includePlugins:
       kubernetes-credentials-provider:
-        version: 1.209.v862c6e5fb_1ef
+        version: 1.225.v14f9e6b_28f53
