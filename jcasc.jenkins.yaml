@@ -95,7 +95,7 @@ unclassified:
     pollingPeriod: 120
     purgeOnDeactivation: true
   cascAutoControllerProvisioning:
-    provisionControllerOnCreation: true
+    provisionControllerOnCreation: false
     fireAndForget: true
   cloudbeesPlatform:
     url: "https://cd.rye.ps.beescloud.com/"
