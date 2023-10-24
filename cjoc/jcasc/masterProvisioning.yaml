@@ -1,4 +1,4 @@
-masterprovisioning:
+masterProvisioning:
   dockerImageDefinitionConfiguration:
     images:
     - imageTag: "cloudbees/cloudbees-core-mm:2.414.3.7"
