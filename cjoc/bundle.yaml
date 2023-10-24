@@ -3,8 +3,7 @@ id: "cjoc"
 version: "1"
 
 jcasc:
-  - "jcasc.jenkins.yaml"
-  - "jcasc.masterProvisioning.yaml"
+  - "jcasc/"
 plugins:
   - "plugins.yaml"
 catalog:
