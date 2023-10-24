@@ -20,6 +20,9 @@ items:
                 maxReplicas: 4
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
+        properties:
+          - configurationAsCode:
+              bundle: main/default-2.414
       - kind: managedController
         displayName: "CloudBees CI - 2.414.2"
         description: 'Controller running the September 2023 release from CloudBees'
@@ -32,6 +35,9 @@ items:
                 maxReplicas: 4
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
+        properties:
+          - configurationAsCode:
+              bundle: main/default-2.414
       - kind: managedController
         displayName: "CloudBees CI - 2.414.1"
         description: 'Controller running the August 2023 release from CloudBees'
