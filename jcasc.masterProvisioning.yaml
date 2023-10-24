@@ -20,3 +20,5 @@ masterProvisioning:
     cpus: "2.0"
     disk: "50"
     memory: "4096"
+    envVars: >-
+      CLOUDBEES_URL=https://www.cloudbees.com
