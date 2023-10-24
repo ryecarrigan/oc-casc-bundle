@@ -20,4 +20,5 @@ masterprovisioning:
     disk: "50"
     memory: "4096"
     envVars: |-
+      CASC_CONFIG=true
       CLOUDBEES_URL=https://www.cloudbees.com
