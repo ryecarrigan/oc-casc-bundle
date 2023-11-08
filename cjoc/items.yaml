@@ -9,6 +9,21 @@ items:
     description: 'Monthly releases from CloudBees'
     items:
       - kind: managedController
+        displayName: "CloudBees CI - 2.426.1"
+        description: 'Controller running the November 2023 release from CloudBees'
+        name: r24261
+        configuration:
+          kubernetes:
+            image: "CloudBees CI - Managed Controller - 2.414.1.1"
+            replication:
+              config:
+                maxReplicas: 4
+                replicas: 1
+                targetCPUUtilizationPercentage: 80
+        properties:
+          - configurationAsCode:
+              bundle: main/default-2.414
+      - kind: managedController
         displayName: "CloudBees CI - 2.414.3"
         description: 'Controller running the October 2023 release from CloudBees'
         name: r24143
