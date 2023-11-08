@@ -1,6 +1,8 @@
 masterProvisioning:
   dockerImageDefinitionConfiguration:
     images:
+    - imageTag: "cloudbees/cloudbees-core-mm:2.426.1.1"
+      name: "CloudBees CI - Managed Controller - 2.426.1.1"
     - imageTag: "cloudbees/cloudbees-core-mm:2.414.3.8"
       name: "CloudBees CI - Managed Controller - 2.414.3.8"
     - imageTag: "cloudbees/cloudbees-core-mm:2.414.2.2"
@@ -21,6 +23,3 @@ masterProvisioning:
     cpus: "2.0"
     disk: "50"
     memory: "4096"
-    envVars: |-
-      CASC_CONFIG=true
-      CLOUDBEES_URL=https://www.cloudbees.com
