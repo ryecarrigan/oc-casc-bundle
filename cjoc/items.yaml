@@ -14,7 +14,7 @@ items:
         name: r24261
         configuration:
           kubernetes:
-            image: "CloudBees CI - Managed Controller - 2.414.1.1"
+            image: "CloudBees CI - Managed Controller - 2.426.1.1"
             replication:
               config:
                 maxReplicas: 4
@@ -22,7 +22,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.414
+              bundle: main/default-2.426
       - kind: managedController
         displayName: "CloudBees CI - 2.414.3"
         description: 'Controller running the October 2023 release from CloudBees'
