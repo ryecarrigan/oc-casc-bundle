@@ -74,7 +74,6 @@ plugins:
   - id: ldap
   - id: mailer
   - id: mapdb-api
-  - id: master-provisioning-core
   - id: master-provisioning-kubernetes
   - id: metrics
   - id: mina-sshd-api-common
@@ -103,6 +102,7 @@ plugins:
   - id: plain-credentials
   - id: plugin-util-api
   - id: popper2-api
+  - id: prism-api
   - id: pubsub-light
   - id: scm-api
   - id: script-security
