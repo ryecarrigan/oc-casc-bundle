@@ -94,6 +94,8 @@ unclassified:
                   - "gitBranchDiscovery"
     pollingPeriod: 120
     purgeOnDeactivation: true
+  bundleUpdateTiming:
+    automaticReload: true
   cascAutoControllerProvisioning:
     provisionControllerOnCreation: false
     fireAndForget: true
