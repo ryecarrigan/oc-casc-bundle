@@ -14,7 +14,7 @@ items:
         name: r24262
         configuration:
           kubernetes:
-            image: "CloudBees CI - Managed Controller - 2.426.2.1"
+            image: "CloudBees CI - Managed Controller - 2.426.2.2"
             replication:
               config:
                 maxReplicas: 4
