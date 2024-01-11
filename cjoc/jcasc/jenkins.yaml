@@ -121,6 +121,8 @@ unclassified:
   usageStatisticsCloudBees:
     disabledJenkinsUsageStatistics: true
     usageStatisticsCollected: false
+  validationVisualization:
+    quiet: true
 
 credentials:
   system:
