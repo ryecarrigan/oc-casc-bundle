@@ -8,6 +8,9 @@ items:
         displayName: "CloudBees CI - 2.426.2 - Demo 3"
         description: 'Controller running the December 2023 release from CloudBees'
         name: demo03
+        properties:
+          - configurationAsCode:
+              bundle: main/default-2.426
         configuration:
           kubernetes:
             image: "CloudBees CI - Managed Controller - 2.426.2.2"
