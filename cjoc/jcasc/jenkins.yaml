@@ -118,8 +118,8 @@ credentials:
     domainCredentials:
       - domain:
           name: "CasC"
-          credentials:
-          - string:
-              id: "casc-secret"
-              scope: GLOBAL
-              secret: "testing"
+        credentials:
+        - string:
+            id: "casc-secret"
+            scope: GLOBAL
+            secret: "testing"
