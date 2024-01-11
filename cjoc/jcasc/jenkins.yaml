@@ -116,18 +116,10 @@ unclassified:
 credentials:
   system:
     domainCredentials:
-      - credentials:
-          - basicSSHUserPrivateKey:
-              id: "github-key"
-              privateKeySource:
-                directEntry:
-                  privateKey: ${githubKey}
-              scope: GLOBAL
-              username: "github-key"
-              usernameSecret: true
-          - string:
-              id: "github-token"
-              scope: GLOBAL
-              secret: ${githubToken}
-        domain:
+      - domain:
           name: "CasC"
+          credentials:
+          - string:
+              id: "casc-secret"
+              scope: GLOBAL
+              secret: "testing"
