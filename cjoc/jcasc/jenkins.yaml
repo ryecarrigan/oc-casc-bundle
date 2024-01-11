@@ -1,4 +1,7 @@
 jenkins:
+  systemMessage: |
+    Configured automatically by Configuration as Code for Operations center
+
   authorizationStrategy: "cloudBeesRoleBasedAccessControl"
   numExecutors: 1
   securityRealm:
