@@ -1,0 +1,18 @@
+items:
+  - kind: folder
+    displayName: Releases
+    name: releases
+    description: 'Monthly releases from CloudBees'
+    items:
+      - kind: managedController
+        displayName: "CloudBees CI - 2.426.2 - Demo 3"
+        description: 'Controller running the December 2023 release from CloudBees'
+        name: demo03
+        configuration:
+          kubernetes:
+            image: "CloudBees CI - Managed Controller - 2.426.2.2"
+            replication:
+              config:
+                maxReplicas: 4
+                replicas: 1
+                targetCPUUtilizationPercentage: 80

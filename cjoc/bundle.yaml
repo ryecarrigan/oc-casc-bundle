@@ -9,6 +9,7 @@ plugins:
 catalog:
   - 'plugin-catalog.yaml'
 items:
+  - "controllers/"
   - "items.yaml"
 rbac:
   - "rbac.yaml"
