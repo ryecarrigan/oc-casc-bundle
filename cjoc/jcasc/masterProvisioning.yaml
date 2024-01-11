@@ -24,3 +24,5 @@ masterProvisioning:
     disk: "50"
     memory: "3072"
     nodeSelectors: "jenkins=controller"
+    systemProperties: |
+      com.cloudbees.opscenter.client.casc.ConfigurationUpdaterTask.recurrencePeriod=1
