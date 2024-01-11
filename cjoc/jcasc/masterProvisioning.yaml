@@ -27,4 +27,5 @@ masterProvisioning:
     memory: "3072"
     nodeSelectors: "jenkins=controller"
     systemProperties: |
+      casc.merge.strategy=override
       com.cloudbees.opscenter.client.casc.ConfigurationUpdaterTask.recurrencePeriod=1
