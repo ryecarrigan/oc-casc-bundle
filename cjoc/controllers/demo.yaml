@@ -4,9 +4,9 @@ removeStrategy:
 
 items:
   - kind: folder
-    displayName: Releases
-    name: releases
-    description: 'Monthly releases from CloudBees'
+    displayName: Demo
+    name: demo-folder
+    description: Demo controllers
     items:
       - kind: managedController
         displayName: "CloudBees CI - 2.426.2 - Demo"
