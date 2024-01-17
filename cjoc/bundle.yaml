@@ -12,3 +12,5 @@ items:
   - "controllers/"
 rbac:
   - "rbac.yaml"
+variables:
+  - "variables.yaml"
