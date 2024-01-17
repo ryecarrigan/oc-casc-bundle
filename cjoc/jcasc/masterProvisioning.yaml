@@ -1,26 +1,26 @@
 masterProvisioning:
   dockerImageDefinitionConfiguration:
     images:
-    - imageTag: "cloudbees/cloudbees-core-mm:2.426.2.2"
-      name: "CloudBees CI - Managed Controller - 2.426.2.2"
-    - imageTag: "cloudbees/cloudbees-core-mm:2.426.1.3"
-      name: "CloudBees CI - Managed Controller - 2.426.1.3"
-    - imageTag: "cloudbees/cloudbees-core-mm:2.414.3.8"
-      name: "CloudBees CI - Managed Controller - 2.414.3.8"
-    - imageTag: "cloudbees/cloudbees-core-mm:2.414.2.2"
-      name: "CloudBees CI - Managed Controller - 2.414.2.2"
-    - imageTag: "cloudbees/cloudbees-core-mm:2.414.1.4"
-      name: "CloudBees CI - Managed Controller - 2.414.1.4"
-    - imageTag: "cloudbees/cloudbees-core-mm:2.401.3.4"
-      name: "CloudBees CI - Managed Controller - 2.401.3.4"
-    - imageTag: "cloudbees/cloudbees-core-mm:2.401.2.3"
-      name: "CloudBees CI - Managed Controller - 2.401.2.3"
-    - imageTag: "cloudbees/cloudbees-core-mm:2.401.1.3"
-      name: "CloudBees CI - Managed Controller - 2.401.1.3"
-    - imageTag: "cloudbees/cloudbees-core-mm:2.387.3.5"
-      name: "CloudBees CI - Managed Controller - 2.387.3.5"
-    - imageTag: "cloudbees/cloudbees-core-mm:2.387.2.4"
-      name: "CloudBees CI - Managed Controller - 2.387.2.4"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2312}"
+      name: "CloudBees CI - Managed Controller - ${v2312}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2311}"
+      name: "CloudBees CI - Managed Controller - ${v2311}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2310}"
+      name: "CloudBees CI - Managed Controller - ${v2310}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2309}"
+      name: "CloudBees CI - Managed Controller - ${v2309}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2308}"
+      name: "CloudBees CI - Managed Controller - ${v2308}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2307}"
+      name: "CloudBees CI - Managed Controller - ${v2307}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2306}"
+      name: "CloudBees CI - Managed Controller - ${v2306}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v23052}"
+      name: "CloudBees CI - Managed Controller - ${v23052}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v23051}"
+      name: "CloudBees CI - Managed Controller - ${v23051}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2304}"
+      name: "CloudBees CI - Managed Controller - ${v2304}"
   kubernetes:
     cpus: "1.5"
     disk: "50"
@@ -28,4 +28,4 @@ masterProvisioning:
     nodeSelectors: "jenkins=controller"
     systemProperties: |
       casc.merge.strategy=override
-      com.cloudbees.opscenter.client.casc.ConfigurationUpdaterTask.recurrencePeriod=1
+      com.cloudbees.opscenter.client.casc.ConfigurationUpdaterTask.recurrencePeriod=15
