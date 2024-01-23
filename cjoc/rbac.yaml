@@ -13,11 +13,15 @@ groups:
   - name: Developers
     roles:
       - name: developer
-        grantedAt: child
+        grantedAt: current
   - name: Browsers
+    members:
+      users:
+        - orange
+        - purple
     roles:
       - name: browser
-        grantedAt: child
+        grantedAt: current
 roles:
   - name: administrator
     filterable: 'false'
