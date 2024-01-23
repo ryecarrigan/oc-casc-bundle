@@ -4,7 +4,6 @@ removeStrategy:
 
 items:
 - kind: folder
-  displayName: team-purple
   name: team-purple
   description: "Controllers for Team Purple's projects"
   groups:
@@ -19,6 +18,11 @@ items:
           grantedAt: 'current'
           propagates: 'true'
   items:
+    - kind: folder
+      name: team-folder
+      items:
+        - kind: folder
+          name: project-folder
     - kind: managedController
       displayName: "Team Purple's Controller 1"
       name: team-purple-1
@@ -39,7 +43,6 @@ items:
             bundle: main/default-2.426
 
 - kind: folder
-  displayName: team-orange
   name: team-orange
   description: "Controllers for Team Orange's projects"
   groups:
@@ -54,6 +57,11 @@ items:
           grantedAt: 'current'
           propagates: 'true'
   items:
+    - kind: folder
+      name: team-folder
+      items:
+        - kind: folder
+          name: project-folder
     - kind: managedController
       displayName: "Team Orange's Controller 1"
       name: team-orange-1
