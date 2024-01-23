@@ -14,9 +14,12 @@ items:
         users:
           - 'purple'
       roles:
-        - name: 'developer'
-          grantedAt: 'current'
-          propagates: 'true'
+        - name: developer
+          grantedAt: current
+          propagates: true
+        - name: secret-manager
+          grantedAt: current
+          propagates: false
   items:
     - kind: folder
       name: team-folder
@@ -53,9 +56,12 @@ items:
         users:
           - 'orange'
       roles:
-        - name: 'developer'
-          grantedAt: 'current'
-          propagates: 'true'
+        - name: developer
+          grantedAt: current
+          propagates: true
+        - name: secret-manager
+          grantedAt: current
+          propagates: false
   items:
     - kind: folder
       name: team-folder
