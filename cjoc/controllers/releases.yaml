@@ -22,7 +22,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.426
+              bundle: main/default-2.440
       - kind: managedController
         displayName: "CloudBees CI - ${v2401}"
         description: 'Controller running the January 2024 release from CloudBees'
