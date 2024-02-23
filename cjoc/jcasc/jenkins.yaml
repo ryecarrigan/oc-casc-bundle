@@ -1,9 +1,9 @@
 jenkins:
   systemMessage: |
-    Configured automatically by Configuration as Code for Operations center (2.426) - HELLO WORLD
+    Configured automatically by Configuration as Code for Operations center (2.440)
 
   authorizationStrategy: "cloudBeesRoleBasedAccessControl"
-  numExecutors: 1
+  numExecutors: 0
   securityRealm:
     local:
       users:
