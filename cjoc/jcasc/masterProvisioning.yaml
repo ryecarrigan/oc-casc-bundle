@@ -26,9 +26,9 @@ masterProvisioning:
     - imageTag: "cloudbees/cloudbees-core-mm:${v2304}"
       name: "CloudBees CI - Managed Controller - ${v2304}"
   kubernetes:
-    cpus: "1.5"
+    cpus: "2"
     disk: "50"
-    memory: "3072"
+    memory: "4096"
     nodeSelectors: "jenkins=controller"
     systemProperties: |
       casc.merge.strategy=override
