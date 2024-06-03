@@ -11,7 +11,7 @@ items:
       - kind: managedController
         displayName: "CloudBees CI - ${v2406}"
         description: 'Controller running the June 2024 release from CloudBees'
-        name: v2405
+        name: v2406
         configuration:
           kubernetes:
             image: "CloudBees CI - Managed Controller - ${v2406}"
