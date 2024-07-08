@@ -1,4 +1,4 @@
-apiVersion: "2"
+apiVersion: "2.0"
 id: "cjoc"
 version: "1"
 
@@ -6,8 +6,6 @@ jcasc:
   - "jcasc/"
 plugins:
   - "plugins.yaml"
-catalog:
-  - 'plugin-catalog.yaml'
 items:
   - "controllers/"
 rbac:
