@@ -1,9 +1,0 @@
-type: plugin-catalog
-version: '1'
-name: cjoc
-displayName: CJOC plugin catalog
-configurations:
-  - description: Catalog plugins
-    includePlugins:
-      kubernetes-credentials-provider:
-        version: 1.225.v14f9e6b_28f53
