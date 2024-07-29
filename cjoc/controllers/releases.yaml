@@ -9,6 +9,21 @@ items:
     description: 'Monthly releases from CloudBees'
     items:
       - kind: managedController
+        displayName: "CloudBees CI - ${v2408}"
+        description: 'Controller running the August 2024 release from CloudBees'
+        name: v2408
+        configuration:
+          kubernetes:
+            image: "CloudBees CI - Managed Controller - ${v2408}"
+            replication:
+              config:
+                maxReplicas: 2
+                replicas: 1
+                targetCPUUtilizationPercentage: 80
+        properties:
+          - configurationAsCode:
+              bundle: main/default-2.440
+      - kind: managedController
         displayName: "CloudBees CI - ${v2407}"
         description: 'Controller running the July 2024 release from CloudBees'
         name: v2407
@@ -17,7 +32,7 @@ items:
             image: "CloudBees CI - Managed Controller - ${v2407}"
             replication:
               config:
-                maxReplicas: 4
+                maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
         properties:
@@ -32,7 +47,7 @@ items:
             image: "CloudBees CI - Managed Controller - ${v2406}"
             replication:
               config:
-                maxReplicas: 4
+                maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
         properties:
@@ -47,7 +62,7 @@ items:
             image: "CloudBees CI - Managed Controller - ${v2405}"
             replication:
               config:
-                maxReplicas: 4
+                maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
         properties:
@@ -62,7 +77,7 @@ items:
             image: "CloudBees CI - Managed Controller - ${v2404}"
             replication:
               config:
-                maxReplicas: 4
+                maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
         properties:
@@ -77,7 +92,7 @@ items:
             image: "CloudBees CI - Managed Controller - ${v2403}"
             replication:
               config:
-                maxReplicas: 4
+                maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
         properties:
@@ -92,7 +107,7 @@ items:
             image: "CloudBees CI - Managed Controller - ${v2402}"
             replication:
               config:
-                maxReplicas: 4
+                maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
         properties:
@@ -107,7 +122,7 @@ items:
             image: "CloudBees CI - Managed Controller - ${v2401}"
             replication:
               config:
-                maxReplicas: 4
+                maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
         properties:
@@ -122,7 +137,7 @@ items:
             image: "CloudBees CI - Managed Controller - ${v2312}"
             replication:
               config:
-                maxReplicas: 4
+                maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
         properties:
@@ -137,7 +152,7 @@ items:
             image: "CloudBees CI - Managed Controller - ${v2311}"
             replication:
               config:
-                maxReplicas: 4
+                maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
         properties:
@@ -152,7 +167,7 @@ items:
             image: "CloudBees CI - Managed Controller - ${v2310}"
             replication:
               config:
-                maxReplicas: 4
+                maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
         properties:
@@ -167,7 +182,7 @@ items:
             image: "CloudBees CI - Managed Controller - ${v2309}"
             replication:
               config:
-                maxReplicas: 4
+                maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
         properties:
@@ -182,7 +197,7 @@ items:
             image: "CloudBees CI - Managed Controller - ${v2308}"
             replication:
               config:
-                maxReplicas: 4
+                maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
         properties:
