@@ -40,7 +40,7 @@ masterProvisioning:
     - imageTag: "cloudbees/cloudbees-core-mm:${v2304}"
       name: "CloudBees CI - Managed Controller - ${v2304}"
   kubernetes:
-    cpus: "2"
+    cpus: "1.8"
     disk: "50"
     memory: "4096"
     nodeSelectors: "jenkins=controller"
