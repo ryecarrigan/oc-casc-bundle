@@ -180,11 +180,6 @@ items:
         configuration:
           kubernetes:
             image: "CloudBees CI - Managed Controller - ${v2310}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
               bundle: main/default-2.414
@@ -195,11 +190,6 @@ items:
         configuration:
           kubernetes:
             image: "CloudBees CI - Managed Controller - ${v2309}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
               bundle: main/default-2.414
@@ -210,11 +200,6 @@ items:
         configuration:
           kubernetes:
             image: "CloudBees CI - Managed Controller - ${v2308}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
               bundle: main/default-2.414
