@@ -1,0 +1,14 @@
+apiVersion: "2"
+id: "cjoc"
+version: "1"
+
+jcasc:
+  - "jcasc/"
+plugins:
+  - "plugins.yaml"
+items:
+  - "controllers/"
+rbac:
+  - "rbac.yaml"
+variables:
+  - "variables.yaml"

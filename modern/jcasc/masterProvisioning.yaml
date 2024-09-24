@@ -1,0 +1,41 @@
+masterProvisioning:
+  dockerImageDefinitionConfiguration:
+    images:
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2409}"
+      name: "CloudBees CI - Managed Controller - ${v2409}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2408b}"
+      name: "CloudBees CI - Managed Controller - ${v2408b}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2408a}"
+      name: "CloudBees CI - Managed Controller - ${v2408a}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2407}"
+      name: "CloudBees CI - Managed Controller - ${v2407}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2406}"
+      name: "CloudBees CI - Managed Controller - ${v2406}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2405}"
+      name: "CloudBees CI - Managed Controller - ${v2405}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2404}"
+      name: "CloudBees CI - Managed Controller - ${v2404}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2403}"
+      name: "CloudBees CI - Managed Controller - ${v2403}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2402}"
+      name: "CloudBees CI - Managed Controller - ${v2402}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2401}"
+      name: "CloudBees CI - Managed Controller - ${v2401}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2312}"
+      name: "CloudBees CI - Managed Controller - ${v2312}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2311}"
+      name: "CloudBees CI - Managed Controller - ${v2311}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2310}"
+      name: "CloudBees CI - Managed Controller - ${v2310}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2309}"
+      name: "CloudBees CI - Managed Controller - ${v2309}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2308}"
+      name: "CloudBees CI - Managed Controller - ${v2308}"
+  kubernetes:
+    cpus: "1.8"
+    disk: "50"
+    memory: "4096"
+    nodeSelectors: "jenkins=controller"
+    systemProperties: |
+      casc.merge.strategy=override
+      com.cloudbees.opscenter.client.casc.ConfigurationUpdaterTask.recurrencePeriod=15
