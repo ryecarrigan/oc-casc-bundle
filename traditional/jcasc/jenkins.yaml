@@ -31,29 +31,6 @@ jenkins:
                 optOut: true
             - mailer:
                 emailAddress: "rcarrigan+purple@cloudbees.com"
-  primaryView:
-    masters:
-      jobFilters:
-        - "connectedMasterViewFilter"
-      name: "Controllers"
-      recurse: true
-  views:
-    - all:
-        name: "all"
-    - masters:
-        jobFilters:
-          - "connectedMasterViewFilter"
-        name: "Controllers"
-        recurse: true
-        columns:
-        - "status"
-        - "weather"
-        - "jobName"
-        - "masterPodStatusViewColumn"
-        - "inactiveItemsViewColumn"
-        - "totalJobsViewColumn"
-        - "queueSizeViewColumn"
-        - "cascViewColumn"
 
 beekeeper:
   enabled: true
@@ -113,13 +90,10 @@ unclassified:
     fireAndForget: true
   cascItemsConfiguration:
     variableInterpolationEnabledForAdmin: true
-  cloudbeesPlatform:
-    url: "https://cd.rye.ps.beescloud.com/"
   gitHubPluginConfig:
     configs:
       - credentialsId: "github-token"
         name: "GitHub"
-    hookUrl: "$JENKINS_BASE_URL/github-webhook/"
   usageStatisticsCloudBees:
     disabledJenkinsUsageStatistics: true
     usageStatisticsCollected: false
