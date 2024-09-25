@@ -66,8 +66,6 @@ plugins:
   - id: jquery3-api
   - id: jsch
   - id: junit
-  - id: kubernetes
-  - id: kubernetes-client-api
   - id: ldap
   - id: mailer
   - id: mapdb-api
