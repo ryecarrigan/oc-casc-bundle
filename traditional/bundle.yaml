@@ -6,8 +6,6 @@ jcasc:
   - "jcasc/"
 plugins:
   - "plugins.yaml"
-items:
-  - "controllers/"
 rbac:
   - "rbac.yaml"
 variables:
