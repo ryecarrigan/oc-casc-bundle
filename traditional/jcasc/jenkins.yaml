@@ -85,9 +85,6 @@ unclassified:
     purgeOnDeactivation: true
   bundleUpdateTiming:
     automaticReload: true
-  cascAutoControllerProvisioning:
-    provisionControllerOnCreation: false
-    fireAndForget: true
   cascItemsConfiguration:
     variableInterpolationEnabledForAdmin: true
   gitHubPluginConfig:
