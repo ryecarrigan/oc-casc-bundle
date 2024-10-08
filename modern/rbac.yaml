@@ -15,9 +15,6 @@ groups:
       - name: developer
         grantedAt: current
   - name: Browsers
-    members:
-      unknown:
-        - authenticated
     roles:
       - name: browser
         grantedAt: current
