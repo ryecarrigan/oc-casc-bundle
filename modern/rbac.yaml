@@ -15,6 +15,11 @@ groups:
       - name: developer
         grantedAt: current
   - name: Browsers
+    members:
+      users:
+        - authenticated
+        - orange
+        - purple
     roles:
       - name: browser
         grantedAt: current
