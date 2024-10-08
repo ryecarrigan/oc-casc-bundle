@@ -16,7 +16,7 @@ groups:
         grantedAt: current
   - name: Browsers
     members:
-      internal_groups:
+      unknown:
         - authenticated
     roles:
       - name: browser
