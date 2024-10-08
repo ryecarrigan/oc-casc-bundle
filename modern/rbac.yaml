@@ -16,9 +16,8 @@ groups:
         grantedAt: current
   - name: Browsers
     members:
-      users:
-        - orange
-        - purple
+      internal_groups:
+        - authenticated
     roles:
       - name: browser
         grantedAt: current
