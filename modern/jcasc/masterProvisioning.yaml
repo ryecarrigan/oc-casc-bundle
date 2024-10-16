@@ -1,6 +1,10 @@
 masterProvisioning:
   dockerImageDefinitionConfiguration:
     images:
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2410b}"
+      name: "CloudBees CI - Managed Controller - ${v2410b}"
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2410a}"
+      name: "CloudBees CI - Managed Controller - ${v2410a}"
     - imageTag: "cloudbees/cloudbees-core-mm:${v2409}"
       name: "CloudBees CI - Managed Controller - ${v2409}"
     - imageTag: "cloudbees/cloudbees-core-mm:${v2408b}"
