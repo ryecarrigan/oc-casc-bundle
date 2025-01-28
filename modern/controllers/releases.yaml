@@ -9,6 +9,36 @@ items:
     description: 'Monthly releases from CloudBees'
     items:
       - kind: managedController
+        displayName: "CloudBees CI - ${v2501}"
+        description: 'Controller running the January 2025 release from CloudBees'
+        name: v2501
+        configuration:
+          kubernetes:
+            image: "CloudBees CI - Managed Controller - ${v2501}"
+            replication:
+              config:
+                maxReplicas: 2
+                replicas: 1
+                targetCPUUtilizationPercentage: 80
+        properties:
+          - configurationAsCode:
+              bundle: main/default-2.479
+      - kind: managedController
+        displayName: "CloudBees CI - ${v2411}"
+        description: 'Controller running the November 2024 release from CloudBees'
+        name: v2411
+        configuration:
+          kubernetes:
+            image: "CloudBees CI - Managed Controller - ${v2411}"
+            replication:
+              config:
+                maxReplicas: 2
+                replicas: 1
+                targetCPUUtilizationPercentage: 80
+        properties:
+          - configurationAsCode:
+              bundle: main/default-2.479
+      - kind: managedController
         displayName: "CloudBees CI - ${v2410b}"
         description: 'Controller running the late October 2024 release from CloudBees'
         name: v2410b
@@ -22,7 +52,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.440
+              bundle: main/default-2.479
       - kind: managedController
         displayName: "CloudBees CI - ${v2410a}"
         description: 'Controller running the early October 2024 release from CloudBees'
@@ -37,7 +67,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.440
+              bundle: main/default-2.452
       - kind: managedController
         displayName: "CloudBees CI - ${v2409}"
         description: 'Controller running the September 2024 release from CloudBees'
@@ -52,7 +82,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.440
+              bundle: main/default-2.452
       - kind: managedController
         displayName: "CloudBees CI - ${v2408b}"
         description: 'Controller running the August 2024 release from CloudBees'
@@ -67,7 +97,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.440
+              bundle: main/default-2.452
       - kind: managedController
         displayName: "CloudBees CI - ${v2408a}"
         description: 'Controller running the August 2024 release from CloudBees'
@@ -82,7 +112,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.440
+              bundle: main/default-2.452
       - kind: managedController
         displayName: "CloudBees CI - ${v2407}"
         description: 'Controller running the July 2024 release from CloudBees'
@@ -97,7 +127,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.440
+              bundle: main/default-2.452
       - kind: managedController
         displayName: "CloudBees CI - ${v2406}"
         description: 'Controller running the June 2024 release from CloudBees'
@@ -112,7 +142,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.440
+              bundle: main/default-2.452
       - kind: managedController
         displayName: "CloudBees CI - ${v2405}"
         description: 'Controller running the May 2024 release from CloudBees'
@@ -188,63 +218,3 @@ items:
         properties:
           - configurationAsCode:
               bundle: main/default-2.426
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2312}"
-        description: 'Controller running the December 2023 release from CloudBees'
-        name: v2312
-        configuration:
-          kubernetes:
-            image: "CloudBees CI - Managed Controller - ${v2312}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.426
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2311}"
-        description: 'Controller running the November 2023 release from CloudBees'
-        name: v2311
-        configuration:
-          kubernetes:
-            image: "CloudBees CI - Managed Controller - ${v2311}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.426
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2310}"
-        description: 'Controller running the October 2023 release from CloudBees'
-        name: v2310
-        configuration:
-          kubernetes:
-            image: "CloudBees CI - Managed Controller - ${v2310}"
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.414
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2309}"
-        description: 'Controller running the September 2023 release from CloudBees'
-        name: v2309
-        configuration:
-          kubernetes:
-            image: "CloudBees CI - Managed Controller - ${v2309}"
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.414
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2308}"
-        description: 'Controller running the August 2023 release from CloudBees'
-        name: v2308
-        configuration:
-          kubernetes:
-            image: "CloudBees CI - Managed Controller - ${v2308}"
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.414
