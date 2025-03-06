@@ -9,6 +9,21 @@ items:
     description: 'Monthly releases from CloudBees'
     items:
       - kind: managedController
+        displayName: "CloudBees CI - ${v2503}"
+        description: 'Controller running the March 2025 release from CloudBees'
+        name: v2503
+        configuration:
+          kubernetes:
+            image: "CloudBees CI - Managed Controller - ${v2503}"
+            replication:
+              config:
+                maxReplicas: 2
+                replicas: 1
+                targetCPUUtilizationPercentage: 80
+        properties:
+          - configurationAsCode:
+              bundle: main/default-2.479
+      - kind: managedController
         displayName: "CloudBees CI - ${v2502}"
         description: 'Controller running the February 2025 release from CloudBees'
         name: v2502

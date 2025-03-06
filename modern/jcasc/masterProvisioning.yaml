@@ -1,6 +1,8 @@
 masterProvisioning:
   dockerImageDefinitionConfiguration:
     images:
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2503}"
+      name: "CloudBees CI - Managed Controller - ${v2503}"
     - imageTag: "cloudbees/cloudbees-core-mm:${v2502}"
       name: "CloudBees CI - Managed Controller - ${v2502}"
     - imageTag: "cloudbees/cloudbees-core-mm:${v2501}"
@@ -36,4 +38,3 @@ masterProvisioning:
     nodeSelectors: "jenkins=controller"
     systemProperties: |
       casc.merge.strategy=override
-      com.cloudbees.opscenter.client.casc.ConfigurationUpdaterTask.recurrencePeriod=15
