@@ -38,7 +38,6 @@ roles:
       - hudson.model.Item.Discover
       - hudson.model.Item.Promote
       - hudson.model.Item.Read
-      - hudson.model.Run.Replay
       - hudson.model.View.Configure
       - hudson.model.View.Create
       - hudson.model.View.Delete
