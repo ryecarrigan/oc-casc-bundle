@@ -2,14 +2,15 @@ plugins:
   - id: ace-editor
   - id: antisamy-markup-formatter
   - id: apache-httpcomponents-client-4-api
+  - id: audit-trail
   - id: authentication-tokens
   - id: aws-credentials
+  - id: aws-java-sdk
   - id: aws-java-sdk-ec2
   - id: aws-java-sdk-elasticbeanstalk
   - id: aws-java-sdk-minimal
   - id: blueocean-commons
-  - id: blueocean-rest
-  - id: bluesteel-cjoc
+  - id: bootstrap4-api
   - id: bootstrap5-api
   - id: bouncycastle-api
   - id: caffeine-api
@@ -23,15 +24,15 @@ plugins:
   - id: cloudbees-casc-items-commons
   - id: cloudbees-casc-items-server
   - id: cloudbees-casc-server
+  - id: cloudbees-ci-catalog
   - id: cloudbees-folder
   - id: cloudbees-folders-plus
   - id: cloudbees-license
   - id: cloudbees-monitoring
+  - id: cloudbees-nodes-plus
   - id: cloudbees-platform-common
   - id: cloudbees-platform-data
   - id: cloudbees-plugin-usage
-  - id: cloudbees-prometheus
-  - id: cloudbees-ssh-slaves
   - id: cloudbees-support
   - id: cloudbees-uc-data-api
   - id: cloudbees-unified-ui
@@ -46,11 +47,12 @@ plugins:
   - id: docker-commons
   - id: durable-task
   - id: echarts-api
+  - id: email-ext
   - id: font-awesome-api
+  - id: form-element-path
   - id: git
   - id: git-client
   - id: github
-  - id: github-api
   - id: handy-uri-templates-2-api
   - id: infradna-backup
   - id: instance-identity
@@ -70,10 +72,10 @@ plugins:
   - id: kubernetes
   - id: kubernetes-client-api
   - id: kubernetes-credentials
-  - id: ldap
   - id: mailer
   - id: mapdb-api
   - id: master-provisioning-kubernetes
+  - id: matrix-project
   - id: metrics
   - id: mina-sshd-api-common
   - id: mina-sshd-api-core
@@ -82,40 +84,38 @@ plugins:
   - id: nectar-license
   - id: nectar-rbac
   - id: node-iterator-api
-  - id: notification-api
   - id: oauth-credentials
   - id: okhttp-api
   - id: operations-center-agent
   - id: operations-center-clusterops
   - id: operations-center-context
   - id: operations-center-elasticsearch-provider
-  - id: operations-center-jnlp-controller
   - id: operations-center-kubernetes-cloud
   - id: operations-center-license
   - id: operations-center-monitoring
-  - id: operations-center-notification
   - id: operations-center-rbac
   - id: operations-center-server
   - id: operations-center-sso
   - id: operations-center-updatecenter
   - id: plain-credentials
   - id: plugin-util-api
+  - id: popper-api
   - id: popper2-api
-  - id: prism-api
-  - id: pubsub-light
+  - id: saml
   - id: scm-api
   - id: script-security
   - id: snakeyaml-api
-  - id: sse-gateway
   - id: ssh-credentials
   - id: sshd
   - id: structs
   - id: support-core
+  - id: splunk-devops
   - id: token-macro
   - id: trilead-api
   - id: unique-id
   - id: user-activity-monitoring
   - id: variant
+  - id: view-job-filters
   - id: workflow-api
   - id: workflow-durable-task-step
   - id: workflow-scm-step
