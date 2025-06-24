@@ -22,7 +22,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.479
+              bundle: main/default-2.504
       - kind: managedController
         displayName: "CloudBees CI - ${v2504b}"
         description: 'Controller running the late April 2025 release from CloudBees'
@@ -225,51 +225,6 @@ items:
         configuration:
           kubernetes:
             image: "CloudBees CI - Managed Controller - ${v2405}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.440
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2404}"
-        description: 'Controller running the April 2024 release from CloudBees'
-        name: v2404
-        configuration:
-          kubernetes:
-            image: "CloudBees CI - Managed Controller - ${v2404}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.440
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2403}"
-        description: 'Controller running the March 2024 release from CloudBees'
-        name: v2403
-        configuration:
-          kubernetes:
-            image: "CloudBees CI - Managed Controller - ${v2403}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.440
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2402}"
-        description: 'Controller running the February 2024 release from CloudBees'
-        name: v2402
-        configuration:
-          kubernetes:
-            image: "CloudBees CI - Managed Controller - ${v2402}"
             replication:
               config:
                 maxReplicas: 2
