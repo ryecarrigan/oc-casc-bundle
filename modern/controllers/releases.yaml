@@ -114,8 +114,8 @@ items:
         description: 'Controller running the March 2025 release from CloudBees'
         name: v2503
         configuration:
-          domain: releases-v2503
           kubernetes:
+            domain: releases-v2503
             image: "CloudBees CI - Managed Controller - ${v2503}"
             replication:
               config:
@@ -194,8 +194,8 @@ items:
         description: 'Controller running the early October 2024 release from CloudBees'
         name: v2410a
         configuration:
-          domain: releases-v2410a
           kubernetes:
+            domain: releases-v2410a
             image: "CloudBees CI - Managed Controller - ${v2410a}"
             replication:
               config:
@@ -210,8 +210,8 @@ items:
         description: 'Controller running the September 2024 release from CloudBees'
         name: v2409
         configuration:
-          domain: releases-v2409
           kubernetes:
+            domain: releases-v2409
             image: "CloudBees CI - Managed Controller - ${v2409}"
             replication:
               config:
@@ -226,8 +226,8 @@ items:
         description: 'Controller running the August 2024 release from CloudBees'
         name: v2408b
         configuration:
-          domain: releases-v2408b
           kubernetes:
+            domain: releases-v2408b
             image: "CloudBees CI - Managed Controller - ${v2408b}"
             replication:
               config:
@@ -242,8 +242,8 @@ items:
         description: 'Controller running the August 2024 release from CloudBees'
         name: v2408a
         configuration:
-          domain: releases-v2408a
           kubernetes:
+            domain: releases-v2408a
             image: "CloudBees CI - Managed Controller - ${v2408a}"
             replication:
               config:
