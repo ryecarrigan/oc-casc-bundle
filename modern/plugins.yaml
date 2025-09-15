@@ -1,5 +1,4 @@
 plugins:
-  - id: ace-editor
   - id: antisamy-markup-formatter
   - id: apache-httpcomponents-client-4-api
   - id: authentication-tokens
@@ -100,7 +99,6 @@ plugins:
   - id: operations-center-updatecenter
   - id: plain-credentials
   - id: plugin-util-api
-  - id: popper2-api
   - id: prism-api
   - id: pubsub-light
   - id: scm-api
