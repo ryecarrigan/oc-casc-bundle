@@ -1,6 +1,6 @@
 jenkins:
   systemMessage: |
-    Configured automatically by Configuration as Code for Operations center (2.479)
+    Configured automatically by Configuration as Code for Operations center
 
   authorizationStrategy: "cloudBeesRoleBasedAccessControl"
   numExecutors: 0
