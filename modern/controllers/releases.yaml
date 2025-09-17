@@ -9,6 +9,23 @@ items:
     description: 'Monthly releases from CloudBees'
     items:
       - kind: managedController
+        displayName: "CloudBees CI - ${v2509}"
+        description: 'Controller running the September 2025 release from CloudBees'
+        name: v2509
+        configuration:
+          kubernetes:
+            domain: releases-v2509
+            image: "CloudBees CI - Managed Controller - ${v2509}"
+            replication:
+              config:
+                maxReplicas: 2
+                replicas: 1
+                targetCPUUtilizationPercentage: 80
+            useNewHealthCheck: true
+        properties:
+          - configurationAsCode:
+              bundle: main/default-2.504
+      - kind: managedController
         displayName: "CloudBees CI - ${v2508}"
         description: 'Controller running the August 2025 release from CloudBees'
         name: v2508
