@@ -110,6 +110,7 @@ plugins:
   - id: sshd
   - id: structs
   - id: support-core
+  - id: theme-manager
   - id: token-macro
   - id: trilead-api
   - id: unique-id
