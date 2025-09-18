@@ -24,7 +24,7 @@ items:
             useNewHealthCheck: true
         properties:
           - configurationAsCode:
-              bundle: main/default-2.504
+              bundle: main/default-2.516.3
       - kind: managedController
         displayName: "CloudBees CI - ${v2508}"
         description: 'Controller running the August 2025 release from CloudBees'

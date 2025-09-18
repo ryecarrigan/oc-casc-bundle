@@ -41,6 +41,7 @@ plugins:
   - id: configuration-as-code
   - id: credentials
   - id: credentials-binding
+  - id: dark-theme
   - id: display-url-api
   - id: docker-commons
   - id: durable-task
