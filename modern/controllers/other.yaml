@@ -1,5 +1,6 @@
 removeStrategy:
-  items: sync
+  items: SYNC
+  rbac: SYNC
 
 items:
   - kind: folder
