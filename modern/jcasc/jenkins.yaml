@@ -67,7 +67,7 @@ beekeeper:
     autoUpgradePlugins: true
 
 cloudBeesCasCServer:
-  defaultBundle: "main/default-global"
+  defaultBundle: main/default-2.516.3
   disableRemoteValidation: false
   visibility: true
 
@@ -94,20 +94,6 @@ support:
     enabled: false
 
 unclassified:
-  bundleStorageService:
-    activated: true
-    bundles:
-      - name: "CBCI CasC Bundles"
-        retriever:
-          SCM:
-            defaultVersion: "main"
-            scmSource:
-              git:
-                remote: "https://github.com/ryecarrigan/cbci-casc-bundles.git"
-                traits:
-                  - "gitBranchDiscovery"
-    pollingPeriod: 120
-    purgeOnDeactivation: true
   bundleUpdateTiming:
     automaticReload: true
   cascAutoControllerProvisioning:

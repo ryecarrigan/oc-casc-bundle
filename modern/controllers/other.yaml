@@ -14,3 +14,5 @@ items:
         properties:
           - configurationAsCode:
               bundle: main/default-2.516.3
+      - kind: managedController
+        name: testing2
