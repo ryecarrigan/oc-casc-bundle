@@ -3,14 +3,14 @@ removeStrategy:
   rbac: SYNC
 
 items:
-  - kind: folder
-    name: controllers
-    items:
-      - kind: managedController
-        name: testing
-        configuration:
-          kubernetes:
-            domain: testing
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.516.3
+  - kind: managedController
+    name: testing
+    configuration:
+      kubernetes:
+        domain: testing
+    properties:
+      - configurationAsCode:
+          bundle: main/folder-admin-example
+      - optOutProperty:
+          securityEnforcerOptOutMode:
+            authorizationOptOutMode: {}

@@ -80,6 +80,10 @@ security:
     enabled: false
   gitHostKeyVerificationConfiguration:
     sshHostKeyVerificationStrategy: "acceptFirstConnectionStrategy"
+  securitySettingsEnforcement:
+    global:
+      realmAndAuthorization:
+        canOverride: true
 
 tool:
   cloudbeesPluginUsageAnalyzer:
