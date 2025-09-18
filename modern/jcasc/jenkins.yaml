@@ -62,7 +62,7 @@ beekeeper:
     enabledForPlugins: true
   upgrades:
     autoDowngradePlugins: false
-    autoUpgradePlugins: false
+    autoUpgradePlugins: true
 
 cloudBeesCasCServer:
   defaultBundle: "main/default-global"
