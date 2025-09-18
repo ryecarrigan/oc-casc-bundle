@@ -16,3 +16,6 @@ items:
               bundle: main/default-2.516.3
       - kind: managedController
         name: testing2
+        configuration:
+          kubernetes:
+            domain: testing2
