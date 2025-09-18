@@ -37,8 +37,6 @@ masterProvisioning:
       name: "CloudBees CI - Managed Controller - ${v2407}"
     - imageTag: "cloudbees/cloudbees-core-mm:${v2406}"
       name: "CloudBees CI - Managed Controller - ${v2406}"
-    - imageTag: "cloudbees/cloudbees-core-mm:${v2405}"
-      name: "CloudBees CI - Managed Controller - ${v2405}"
   kubernetes:
     cpus: "1.8"
     disk: "50"
