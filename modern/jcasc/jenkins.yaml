@@ -15,6 +15,8 @@ jenkins:
                 optOut: true
             - mailer:
                 emailAddress: "rcarrigan@cloudbees.com"
+            - theme:
+                theme: "dark"
         - id: "orange"
           name: "Orange Demo"
           password: ${decodeBase64:${demoPassword}}
