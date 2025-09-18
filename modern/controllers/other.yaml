@@ -1,0 +1,16 @@
+removeStrategy:
+  rbac: SYNC
+  items: NONE
+
+items:
+  - kind: folder
+    name: controllers
+    items:
+      - kind: managedController
+        name: testing
+        configuration:
+          kubernetes:
+            domain: testing
+        properties:
+          - configurationAsCode:
+              bundle: main/default-2.516.3
