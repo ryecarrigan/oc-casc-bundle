@@ -119,8 +119,6 @@ unclassified:
     fireAndForget: true
   cascItemsConfiguration:
     variableInterpolationEnabledForAdmin: true
-  cloudbeesPlatform:
-    url: "https://cd.rye.ps.beescloud.com/"
   gitHubPluginConfig:
     configs:
       - credentialsId: "github-token"
