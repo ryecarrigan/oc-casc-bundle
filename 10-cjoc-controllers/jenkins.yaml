@@ -36,8 +36,11 @@ unclassified:
     variableInterpolationEnabledForAdmin: true
 
   cascAutoControllerProvisioning:
-    provisionControllerOnCreation: true
+    duration: 60
     fireAndForget: true
+    initialDelay: 15
+    provisionControllerOnCreation: true
+    timeout: 600
 
   validationVisualization:
     quiet: true
