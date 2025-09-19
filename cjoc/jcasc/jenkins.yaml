@@ -1,7 +1,0 @@
-jenkins:
-  systemMessage: |
-    This CasC bundle is deprecated. Please update your values to use the bundle at /modern!
-
-license:
-  certificate: ${licenseCert}
-  key: ${licenseKey}

@@ -1,0 +1,7 @@
+jenkins:
+  systemMessage: |
+    Minimal bundle for the operations center
+
+license:
+  certificate: ${licenseCert}
+  key: ${licenseKey}

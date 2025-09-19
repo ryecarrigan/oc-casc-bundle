@@ -3,4 +3,4 @@ id: "cjoc"
 version: "1"
 
 jcasc:
-  - "jcasc/"
+  - "jenkins.yaml"
