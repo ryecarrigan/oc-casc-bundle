@@ -1,0 +1,22 @@
+jenkins:
+  numExecutors: 0
+  systemMessage: |
+    Minimal bundle with auto-reload and provisioning
+  authorizationStrategy: "cloudBeesRoleBasedAccessControl"
+  securityRealm:
+    local:
+      users:
+        - id: "rye"
+          name: "Rye Carrigan"
+          password: ${decodeBase64:${adminPassword}}
+
+license:
+  certificate: ${licenseCert}
+  key: ${licenseKey}
+
+unclassified:
+  bundleUpdateTiming:
+    automaticReload: true
+  cascAutoControllerProvisioning:
+    provisionControllerOnCreation: false
+    fireAndForget: true
