@@ -42,8 +42,6 @@ masterProvisioning:
     disk: "50"
     memory: "4096"
     nodeSelectors: "jenkins=controller"
-    systemProperties: |
-      casc.merge.strategy=override
     yaml: |
       ---
       apiVersion: rbac.authorization.k8s.io/v1
