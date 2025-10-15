@@ -9,6 +9,23 @@ items:
     description: 'Monthly releases from CloudBees'
     items:
       - kind: managedController
+        displayName: "CloudBees CI - ${v2510}"
+        description: 'Controller running the October 2025 release from CloudBees'
+        name: v2510
+        configuration:
+          kubernetes:
+            domain: releases-v2509
+            image: "CloudBees CI - Managed Controller - ${v2510}"
+            replication:
+              config:
+                maxReplicas: 2
+                replicas: 1
+                targetCPUUtilizationPercentage: 80
+            useNewHealthCheck: true
+        properties:
+          - configurationAsCode:
+              bundle: main/default-2.516.3
+      - kind: managedController
         displayName: "CloudBees CI - ${v2509}"
         description: 'Controller running the September 2025 release from CloudBees'
         name: v2509
@@ -214,54 +231,6 @@ items:
           kubernetes:
             domain: releases-v2410a
             image: "CloudBees CI - Managed Controller - ${v2410a}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.452
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2409}"
-        description: 'Controller running the September 2024 release from CloudBees'
-        name: v2409
-        configuration:
-          kubernetes:
-            domain: releases-v2409
-            image: "CloudBees CI - Managed Controller - ${v2409}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.452
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2408b}"
-        description: 'Controller running the August 2024 release from CloudBees'
-        name: v2408b
-        configuration:
-          kubernetes:
-            domain: releases-v2408b
-            image: "CloudBees CI - Managed Controller - ${v2408b}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.452
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2408a}"
-        description: 'Controller running the August 2024 release from CloudBees'
-        name: v2408a
-        configuration:
-          kubernetes:
-            domain: releases-v2408a
-            image: "CloudBees CI - Managed Controller - ${v2408a}"
             replication:
               config:
                 maxReplicas: 2
