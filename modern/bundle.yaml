@@ -4,8 +4,6 @@ version: "2"
 
 jcasc:
   - "jcasc/"
-plugins:
-  - "plugins.yaml"
 items:
   - "controllers/"
 rbac:
