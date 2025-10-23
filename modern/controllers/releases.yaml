@@ -14,7 +14,7 @@ items:
         name: v2510
         configuration:
           kubernetes:
-            domain: releases-v2509
+            domain: releases-v2510
             image: "CloudBees CI - Managed Controller - ${v2510}"
             replication:
               config:
