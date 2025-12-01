@@ -4,6 +4,9 @@ jenkins:
 
   authorizationStrategy: "cloudBeesRoleBasedAccessControl"
   numExecutors: 0
+  disabledAdministrativeMonitors:
+    - "com.cloudbees.jenkins.plugins.administrative_monitors.CJOCBuildSecurityMonitor"
+
   securityRealm:
     local:
       users:
@@ -106,7 +109,7 @@ unclassified:
           SCM:
             defaultVersion: "main"
             scmSource:
-              git:
+              gitSource:
                 remote: "https://github.com/ryecarrigan/cbci-casc-bundles.git"
                 traits:
                   - "gitBranchDiscovery"
