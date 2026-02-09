@@ -110,6 +110,7 @@ unclassified:
             defaultVersion: "main"
             scmSource:
               gitSource:
+                credentialsId: "github-pat"
                 remote: "https://github.com/ryecarrigan/cbci-casc-bundles.git"
                 traits:
                   - "gitBranchDiscovery"
