@@ -14,8 +14,6 @@ jenkins:
           name: "Rye Carrigan"
           password: ${decodeBase64:${adminPassword}}
           properties:
-            - blueSteelRedirectOptOutProperty:
-                optOut: true
             - mailer:
                 emailAddress: "rcarrigan@cloudbees.com"
             - theme:
@@ -24,16 +22,12 @@ jenkins:
           name: "Orange Demo"
           password: ${decodeBase64:${demoPassword}}
           properties:
-            - blueSteelRedirectOptOutProperty:
-                optOut: true
             - mailer:
                 emailAddress: "rcarrigan+orange@cloudbees.com"
         - id: "purple"
           name: "Purple Demo"
           password: ${decodeBase64:${demoPassword}}
           properties:
-            - blueSteelRedirectOptOutProperty:
-                optOut: true
             - mailer:
                 emailAddress: "rcarrigan+purple@cloudbees.com"
   primaryView:
