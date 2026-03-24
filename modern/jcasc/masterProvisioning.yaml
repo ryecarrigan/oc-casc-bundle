@@ -36,6 +36,7 @@ masterProvisioning:
   kubernetes:
     cpus: "1.5"
     disk: "50"
+    fsGroup: ""
     memory: "4096"
     nodeSelectors: "jenkins=controller"
     yaml: |
