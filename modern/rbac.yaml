@@ -16,10 +16,8 @@ groups:
         grantedAt: current
   - name: Browsers
     members:
-      users:
+      unknown:
         - authenticated
-        - orange
-        - purple
     roles:
       - name: browser
         grantedAt: current
@@ -46,11 +44,6 @@ roles:
     filterable: true
     permissions:
       - hudson.model.Hudson.Read
-  - name: secret-manager
-    filterable: true
-    permissions:
-      - com.cloudbees.plugins.credentials.CredentialsProvider.Update
-      - com.cloudbees.plugins.credentials.CredentialsProvider.Create
   - name: authenticated
     filterable: false
     permissions: []
