@@ -3,6 +3,5 @@ plugins:
   - id: cloudbees-casc-client
   - id: cloudbees-casc-items-commons
   - id: cloudbees-casc-items-server
-  - id: dark-theme
   - id: github
   - id: operations-center-notification
