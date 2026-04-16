@@ -21,7 +21,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-
         properties:
           - configurationAsCode:
               bundle: main/default-2.541.1
@@ -38,7 +37,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-
         properties:
           - configurationAsCode:
               bundle: main/default-2.541.1
@@ -55,7 +53,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-
         properties:
           - configurationAsCode:
               bundle: main/default-2.541.1
@@ -72,7 +69,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-
         properties:
           - configurationAsCode:
               bundle: main/default-2.541.1
@@ -89,7 +85,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-
         properties:
           - configurationAsCode:
               bundle: main/default-2.516.3
@@ -106,7 +101,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-
         properties:
           - configurationAsCode:
               bundle: main/default-2.516.3
@@ -123,7 +117,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-
         properties:
           - configurationAsCode:
               bundle: main/default-2.516.3
@@ -140,7 +133,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-
         properties:
           - configurationAsCode:
               bundle: main/default-2.516.3
@@ -157,7 +149,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-
         properties:
           - configurationAsCode:
               bundle: main/default-2.504
@@ -174,7 +165,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-
         properties:
           - configurationAsCode:
               bundle: main/default-2.504
@@ -191,7 +181,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-
         properties:
           - configurationAsCode:
               bundle: main/default-2.504
@@ -208,7 +197,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-
         properties:
           - configurationAsCode:
               bundle: main/default-2.504
@@ -220,71 +208,6 @@ items:
           kubernetes:
             domain: releases-v2504b
             image: "CloudBees CI - Managed Controller - ${v2504b}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.479
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2504a}"
-        description: 'Controller running the early April 2025 release from CloudBees'
-        name: v2504a
-        configuration:
-          kubernetes:
-            domain: releases-v2504a
-            image: "CloudBees CI - Managed Controller - ${v2504a}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.479
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2503}"
-        description: 'Controller running the March 2025 release from CloudBees'
-        name: v2503
-        configuration:
-          kubernetes:
-            domain: releases-v2503
-            image: "CloudBees CI - Managed Controller - ${v2503}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.479
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2502}"
-        description: 'Controller running the February 2025 release from CloudBees'
-        name: v2502
-        configuration:
-          kubernetes:
-            domain: releases-v2502
-            image: "CloudBees CI - Managed Controller - ${v2502}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-        properties:
-          - configurationAsCode:
-              bundle: main/default-2.479
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2501}"
-        description: 'Controller running the January 2025 release from CloudBees'
-        name: v2501
-        configuration:
-          kubernetes:
-            domain: releases-v2501
-            image: "CloudBees CI - Managed Controller - ${v2501}"
             replication:
               config:
                 maxReplicas: 2
