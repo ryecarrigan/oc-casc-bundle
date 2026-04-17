@@ -35,7 +35,7 @@ masterProvisioning:
     nodeSelectors: "jenkins=controller"
     systemProperties: >-
       jenkins.model.Jenkins.buildsDir="^${ITEM_ROOTDIR}/builds"
-      jenkins.model.Jenkins.workspacesDir="^${JENKINS_HOME}/workspace/\${ITEM_FULL_NAME}"
+      jenkins.model.Jenkins.workspacesDir="^${JENKINS_HOME}/workspace/^${ITEM_FULL_NAME}"
     yaml: |
       ---
       apiVersion: rbac.authorization.k8s.io/v1
