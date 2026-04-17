@@ -33,7 +33,7 @@ masterProvisioning:
     fsGroup: ""
     memory: "4096"
     nodeSelectors: "jenkins=controller"
-    systemProperties: >-
+    javaOptions: >-
       jenkins.model.Jenkins.buildsDir="\^${ITEM_ROOTDIR}/builds"
       jenkins.model.Jenkins.workspacesDir="\^${JENKINS_HOME}/workspace/\^${ITEM_FULL_NAME}"
     yaml: |
