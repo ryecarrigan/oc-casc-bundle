@@ -21,6 +21,9 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
+             systemProperties: |-
+              jenkins.model.Jenkins.buildsDir="\\^${ITEM_ROOTDIR}/builds"
+              jenkins.model.Jenkins.workspacesDir="\\^${JENKINS_HOME}/workspace/\\^${ITEM_FULL_NAME}"
         properties:
           - configurationAsCode:
               bundle: main/default-2.541.1
