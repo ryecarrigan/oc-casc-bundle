@@ -21,7 +21,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-            useNewHealthCheck: true
         properties:
           - configurationAsCode:
               bundle: main/default-2.541.1
