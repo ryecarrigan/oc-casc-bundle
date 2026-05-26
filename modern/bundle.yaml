@@ -2,7 +2,6 @@ apiVersion: "2"
 id: "cjoc"
 version: "2"
 
-allowCapExceptions: true
 jcasc:
   - "jcasc/"
 plugins:
