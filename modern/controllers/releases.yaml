@@ -23,7 +23,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.541.1
+              bundle: release-2.541.1/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2604}"
         description: 'Controller running the latest release from CloudBees'
@@ -42,7 +42,7 @@ items:
               jenkins.model.Jenkins.workspacesDir="\\^${JENKINS_HOME}/workspace/\\^${ITEM_FULL_NAME}"
         properties:
           - configurationAsCode:
-              bundle: main/default-2.541.1
+              bundle: release-2.541.1/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2603}"
         description: 'Controller running the latest release from CloudBees'
@@ -58,7 +58,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.541.1
+              bundle: release-2.541.1/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2602}"
         description: 'Controller running the latest release from CloudBees'
@@ -74,7 +74,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.541.1
+              bundle: release-2.541.1/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2601}"
         description: 'Controller running the January 2026 release from CloudBees'
@@ -90,7 +90,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.541.1
+              bundle: release-2.541.1/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2512}"
         description: 'Controller running the December 2025 release from CloudBees'
@@ -106,7 +106,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.516.3
+              bundle: release-2.516.3/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2511}"
         description: 'Controller running the November 2025 release from CloudBees'
@@ -122,7 +122,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.516.3
+              bundle: release-2.516.3/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2510}"
         description: 'Controller running the October 2025 release from CloudBees'
@@ -138,7 +138,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.516.3
+              bundle: release-2.528.1/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2509}"
         description: 'Controller running the September 2025 release from CloudBees'
@@ -154,7 +154,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.516.3
+              bundle: release-2.516.3/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2508}"
         description: 'Controller running the August 2025 release from CloudBees'
@@ -170,7 +170,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.504
+              bundle: release-2.504.1/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2507}"
         description: 'Controller running the July 2025 release from CloudBees'
@@ -186,7 +186,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.504
+              bundle: release-2.504.1/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2506}"
         description: 'Controller running the June 2025 release from CloudBees'
@@ -202,7 +202,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.504
+              bundle: release-2.504.1/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2505}"
         description: 'Controller running the May 2025 release from CloudBees'
@@ -218,7 +218,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.504
+              bundle: release-2.504.1/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2504b}"
         description: 'Controller running the late April 2025 release from CloudBees'
@@ -234,4 +234,4 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/default-2.479
+              bundle: release-2.479/controller
