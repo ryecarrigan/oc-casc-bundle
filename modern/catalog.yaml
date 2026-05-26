@@ -1,0 +1,10 @@
+type: "plugin-catalog"
+version: "1"
+name: "plugin-catalog"
+displayName: "Plugin Catalog"
+
+configurations:
+  - description: "CAP Exceptions"
+    beekeeperExceptions:
+      credentials:
+        version: 1492.vcfb_5dc894a_e3
