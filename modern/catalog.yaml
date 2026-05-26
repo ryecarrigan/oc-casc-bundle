@@ -6,5 +6,5 @@ displayName: "Plugin Catalog"
 configurations:
   - description: "CAP Exceptions"
     beekeeperExceptions:
-      credentials:
-        version: 1492.vcfb_5dc894a_e3
+      support-core:
+        version: 1830.v95660efff726
