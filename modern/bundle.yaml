@@ -2,6 +2,7 @@ apiVersion: "2"
 id: "cjoc"
 version: "2"
 
+allowCapExceptions: true
 jcasc:
   - "jcasc/"
 plugins:
@@ -12,5 +13,3 @@ rbac:
   - "rbac.yaml"
 variables:
   - "variables.yaml"
-catalog:
-  - "catalog.yaml"
