@@ -61,3 +61,7 @@ masterProvisioning:
               resources:
                 limits:
                   ephemeral-storage: "4Gi"
+              volumes:
+                - name: "tmp"
+                  emptyDir:
+                    sizeLimit: "2Gi"
