@@ -9,6 +9,22 @@ items:
     description: 'Monthly releases from CloudBees'
     items:
       - kind: managedController
+        displayName: "CloudBees CI - ${v2606}"
+        description: 'Controller running the latest release from CloudBees'
+        name: v2606
+        configuration:
+          kubernetes:
+            domain: releases-v2606
+            image: "CloudBees CI - Managed Controller - ${v2606}"
+            replication:
+              config:
+                maxReplicas: 2
+                replicas: 1
+                targetCPUUtilizationPercentage: 80
+        properties:
+          - configurationAsCode:
+              bundle: main/controller
+      - kind: managedController
         displayName: "CloudBees CI - ${v2605}"
         description: 'Controller running the latest release from CloudBees'
         name: v2605
@@ -37,9 +53,6 @@ items:
                 maxReplicas: 2
                 replicas: 1
                 targetCPUUtilizationPercentage: 80
-            systemProperties: |-
-              jenkins.model.Jenkins.buildsDir="\\^${ITEM_ROOTDIR}/builds"
-              jenkins.model.Jenkins.workspacesDir="\\^${JENKINS_HOME}/workspace/\\^${ITEM_FULL_NAME}"
         properties:
           - configurationAsCode:
               bundle: release-2.541.1/controller
