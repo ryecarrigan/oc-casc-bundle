@@ -1,6 +1,8 @@
 masterProvisioning:
   dockerImageDefinitionConfiguration:
     images:
+    - imageTag: "cloudbees/cloudbees-core-mm:${v2608}"
+      name: "CloudBees CI - Managed Controller - ${v2608}"
     - imageTag: "cloudbees/cloudbees-core-mm:${v2607}"
       name: "CloudBees CI - Managed Controller - ${v2607}"
     - imageTag: "cloudbees/cloudbees-core-mm:${v2606}"
@@ -27,12 +29,6 @@ masterProvisioning:
       name: "CloudBees CI - Managed Controller - ${v2508}"
     - imageTag: "cloudbees/cloudbees-core-mm:${v2507}"
       name: "CloudBees CI - Managed Controller - ${v2507}"
-    - imageTag: "cloudbees/cloudbees-core-mm:${v2506}"
-      name: "CloudBees CI - Managed Controller - ${v2506}"
-    - imageTag: "cloudbees/cloudbees-core-mm:${v2505}"
-      name: "CloudBees CI - Managed Controller - ${v2505}"
-    - imageTag: "cloudbees/cloudbees-core-mm:${v2504b}"
-      name: "CloudBees CI - Managed Controller - ${v2504b}"
   kubernetes:
     cpus: "1.5"
     disk: "50"
