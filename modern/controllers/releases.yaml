@@ -9,6 +9,22 @@ items:
     description: 'Monthly releases from CloudBees'
     items:
       - kind: managedController
+        displayName: "CloudBees CI - ${v2609a}"
+        description: 'Controller running the latest release from CloudBees'
+        name: v2609a
+        configuration:
+          kubernetes:
+            domain: releases-v2609a
+            image: "CloudBees CI - Managed Controller - ${v2609a}"
+            replication:
+              config:
+                maxReplicas: 2
+                replicas: 1
+                targetCPUUtilizationPercentage: 80
+        properties:
+          - configurationAsCode:
+              bundle: main/controller
+      - kind: managedController
         displayName: "CloudBees CI - ${v2608}"
         description: 'Controller running the latest release from CloudBees'
         name: v2608
@@ -200,35 +216,3 @@ items:
         properties:
           - configurationAsCode:
               bundle: release-2.516.3/controller
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2508}"
-        description: 'Controller running the August 2025 release from CloudBees'
-        name: v2508
-        configuration:
-          kubernetes:
-            domain: releases-v2508
-            image: "CloudBees CI - Managed Controller - ${v2508}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-        properties:
-          - configurationAsCode:
-              bundle: release-2.504.1/controller
-      - kind: managedController
-        displayName: "CloudBees CI - ${v2507}"
-        description: 'Controller running the July 2025 release from CloudBees'
-        name: v2507
-        configuration:
-          kubernetes:
-            domain: releases-v2507
-            image: "CloudBees CI - Managed Controller - ${v2507}"
-            replication:
-              config:
-                maxReplicas: 2
-                replicas: 1
-                targetCPUUtilizationPercentage: 80
-        properties:
-          - configurationAsCode:
-              bundle: release-2.504.1/controller
