@@ -39,7 +39,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/controller
+              bundle: release-2.555.2/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2607}"
         description: 'Controller running the latest release from CloudBees'
@@ -55,7 +55,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/controller
+              bundle: release-2.555.2/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2606}"
         description: 'Controller running the latest release from CloudBees'
@@ -71,7 +71,7 @@ items:
                 targetCPUUtilizationPercentage: 80
         properties:
           - configurationAsCode:
-              bundle: main/controller
+              bundle: release-2.555.2/controller
       - kind: managedController
         displayName: "CloudBees CI - ${v2605}"
         description: 'Controller running the latest release from CloudBees'
